@@ -60,10 +60,7 @@ class Scene
 {
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(DrawSVGPlugin);
-  gsap.set('#line-length', { drawSVG: 0 });
-  gsap.set('#line-wingspan', { drawSVG: 0 });
-  gsap.set('#circle-phalange', { drawSVG: 0 });
-
+  
   var object;
 
   function onModelLoaded() {
@@ -100,30 +97,6 @@ function setupAnimation(model)
   scene.render();
 
   var sectionDuration = 1;
-  gsap.fromTo(scene.views[1],
-  { height: 0, bottom: 0 },
-  {
-    height: 0, bottom: 1,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: ".blueprint",
-      scrub: true,
-      start: "bottom bottom",
-      end: "bottom top" } });
-
-
-
-  gsap.fromTo(scene.views[1],
-  { height: 0, bottom: 0 },
-  {
-    height: 0, bottom: 0,
-    ease: 'none',
-    scrollTrigger: {
-      trigger: ".blueprint",
-      scrub: true,
-      start: "top bottom",
-      end: "top top" } });
-
 
 
   gsap.to('.ground', {
@@ -144,69 +117,17 @@ function setupAnimation(model)
       start: "top bottom",
       end: "bottom top" } });
 
-
-
-  gsap.to('#line-length', {
-    drawSVG: 0,
+  gsap.from('.factory', {
+    y: "30%",
     scrollTrigger: {
-      trigger: ".length",
+      trigger: ".ground-container",
       scrub: true,
       start: "top bottom",
-      end: "top top" } });
-
-
-
-  gsap.to('#line-wingspan', {
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".wingspan",
-      scrub: true,
-      start: "top 25%",
-      end: "bottom 50%" } });
-
-
-
-  gsap.to('#circle-phalange', {
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".phalange",
-      scrub: true,
-      start: "top 50%",
-      end: "bottom 100%" } });
-
-
-
-  gsap.to('#line-length', {
-    opacity: 0,
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".length",
-      scrub: true,
-      start: "top top",
       end: "bottom top" } });
 
 
 
-  gsap.to('#line-wingspan', {
-    opacity: 0,
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".wingspan",
-      scrub: true,
-      start: "top top",
-      end: "bottom top" } });
-
-
-
-  gsap.to('#circle-phalange', {
-    opacity: 0,
-    drawSVG: 0,
-    scrollTrigger: {
-      trigger: ".phalange",
-      scrub: true,
-      start: "top top",
-      end: "bottom top" } });
-
+  
 
 
   let tl = new gsap.timeline(
