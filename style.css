@@ -255,3 +255,132 @@ body .frame1 .solar_systm .planet.earth {
   animation: planet 60s 3.9s infinite linear;
   clip-path: inset(-120% -100% 73.43% -100%);
 }
+
+.div {
+  background-color: black;
+  padding-left: 0px;
+}
+.div-2 {
+  gap: 20px;
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 23%;
+  margin-left: 0px;
+}
+.div-3 {
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  gap: 0px;
+  font-size: 20px;
+  color: #fcfcfc;
+  font-weight: 400;
+  text-align: center;
+  padding: 26px 37px;
+}
+.div-4 {
+  font-family: Raleway, sans-serif;
+  margin: auto 0;
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 77%;
+  margin-left: 20px;
+}
+.div-5 {
+  flex-grow: 1;
+}
+
+.div-6 {
+  gap: 20px;
+  display: flex;
+}
+
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 74%;
+  margin-left: 0px;
+}
+
+.div-7 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-size: 24px;
+  color: #fcfcfc;
+  font-weight: 300;
+  text-align: center;
+  padding: 49px 60px;
+}
+
+
+.div-8 {
+  display: flex;
+  width: 798px;
+  max-width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+.div-9 {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+.div-10 {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+}
+.div-11 {
+  font-family: Raleway, sans-serif;
+}
+.div-12 {
+  font-family: Raleway, sans-serif;
+}
+.div-13 {
+  font-family: Raleway, sans-serif;
+}
+.column-4 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 26%;
+  margin-left: 20px;
+}
+
+.div-14 {
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  padding: 28px 70px 28px 18px;
+}
+
+.div-15 {
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  margin: auto 0;
+}
+.div-16 {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  justify-content: center;
+}
+.div-17 {
+  font-family: Raleway, sans-serif;
+  border-radius: 32px;
+  background-color: #d96233;
+  justify-content: center;
+  padding: 23px 24px;
+}
