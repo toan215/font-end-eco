@@ -4,70 +4,204 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application</title>
-    <link rel="stylesheet" href="applicate.css">
+    <link rel="stylesheet" href="style-applicate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header__top">
-            <div class="header__container">
-                <div class="header__lockup">
-                    <button class="header__menu-button" tabindex="0">
-                    </button>
-                    <a class="link" href="#" aria-label="Google Maps Platform" data-category="globalNav" data-action="linkClick" data-label="navGMPHome" aria-label="ECO MOTION">
-                       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/086f2e3dbc4f9135c72a623c824a9bd1af398467e75cbcae883dac8c43c0aaae?apiKey=f8ad55ab573f48608f7cfe6da6119bf8&" width="36" height="36" title="Ecomotion" alt="Ecomotion">
-                       <span class="link__label">
-                        <span>ECO</span>
-                        MOTION
-                       </span>
-                    </a>
-                </div>
-                <div class="header__nav header__nav--desktop">
-                    <div class="header__nav__item">
-                        <a class="link  " href="#section-1" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
-                            <span class="link__label">Why Ecomotion</span>
+    <div class="main">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__container">
+                    <div class="header__lockup">
+                        <button class="header__menu-button" tabindex="0" title="Open the navigation&nbsp;drawer" menu-open>
+                            <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/menu.svg" width="24" height="24" alt role="presentation">
+                        </button>
+                        <a class="link" href="#" aria-label="Google Maps Platform" data-category="globalNav" data-action="linkClick" data-label="navGMPHome" aria-label="ECO MOTION">
+                           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/086f2e3dbc4f9135c72a623c824a9bd1af398467e75cbcae883dac8c43c0aaae?apiKey=f8ad55ab573f48608f7cfe6da6119bf8&" width="36" height="36" title="Ecomotion" alt="Ecomotion">
+                           <span class="link__label">
+                            <span>ECO</span>
+                            MOTION
+                           </span>
                         </a>
                     </div>
-                    <div class="header__nav__item">
-                        <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
-                            <span class="link__label">Ecomotion</span>
-                        </a>
-                    </div>
-                    <div class="header__nav__item">
-                        <a class="link  " href="#section-3" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
-                            <span class="link__label">Ecomotion</span>
-                        </a>
-                    </div>
-                    <div class="header__nav__item">
-                        <a class="link  " href="#section-4" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
-                            <span class="link__label">Ecomotion</span>
-                        </a>
-                    </div>
-                    <div class="header__nav__item">
-                        <a class="link  " href="#section-4" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
-                            <span class="link__label">Ecomotion</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="header__aside">
-                    <div class="header__aside__buttons header__aside__buttons--group2">
-                        <div class="header__aside__button">
-                            <a class="button     button--medium" href="" data-append-utm data-category="globalNav" data-action="mapsCta" data-label="contactSalesMaps"> Log in </a>
+                    <div class="header__nav header__nav--desktop">
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-1" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Why Ecomotion</span>
+                            </a>
                         </div>
-                        <div class="header__aside__button">
-                            <a class="button    " href="" target="_blank" rel="noopener" aria-label="Visit cloud console to get started" data-append-utm data-category="globalNav" data-action="mapsCta" data-label="getStartedNav"> Sign up </a>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-3" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-4" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-4" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
                         </div>
                     </div>
-                    
+                    <div class="header__aside">
+                        <div class="header__aside__buttons header__aside__buttons--group2">
+                            <div class="header__aside__button">
+                                <a class="button     button--medium" href="" data-append-utm data-category="globalNav" data-action="mapsCta" data-label="contactSalesMaps"> Log in </a>
+                            </div>
+                            <div class="header__aside__button">
+                                <a class="button    " href="" target="_blank" rel="noopener" aria-label="Visit cloud console to get started" data-append-utm data-category="globalNav" data-action="mapsCta" data-label="getStartedNav"> Sign up </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+            </div>
+            <div class="header__bottom">
+                <div class="header__container">
+                    <div class="header__nav">
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-1" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Why Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                        <div class="header__nav__item">
+                            <a class="link  " href="#section-2" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                                <span class="link__label">Ecomotion</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header__mobile__aside">
+            <div class="header__mobile__aside__buttons header__mobile__aside__buttons--group2">
+                <div class="header__mobile__aside__button">
+                    <a class="button     button--medium" href="https://mapsplatform.google.com/contact-us/" data-append-utm data-category="globalNav" data-action="mapsCta" data-label="contactSalesMaps"> log in </a>
+                </div>
+                <div class="header__mobile__aside__button">
+                    <a class="button    " href="https://console.cloud.google.com/google/maps-apis/start?ref=https%3A%…mapsplatform.google.com&hl=en&utm_referrer=https%3A%2F%2Fwww.google.com%2F" target="_blank" rel="noopener" aria-label="Visit cloud console to get started" data-append-utm data-category="globalNav" data-action="mapsCta" data-label="getStartedNav"> Sign up </a>
+                </div>
             </div>
         </div>
-    </header>
-    <section>
-        <div></div>
-    </section>
+        <div class="header__mobile__nav open">
+            <div class="header__mobile__nav__mask" menu-close></div>
+            <div class="header__nav">
+                <div class="header__lockup">
+                    <a class="link  " href="/" aria-label="Google Maps Platform" data-category="globalNav" data-action="linkClick" data-label="navGMPHome">
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/086f2e3dbc4f9135c72a623c824a9bd1af398467e75cbcae883dac8c43c0aaae?apiKey=f8ad55ab573f48608f7cfe6da6119bf8&" width="36" height="36" title="Ecomotion" alt="Ecomotion">
+                           <span class="link__label">
+                            <span>Eco</span>
+                            Motion
+                        </span>
+                    </a>
+                    <button class="header__nav__close-button" tabindex="0" title="Close the navigation drawer" menu-close>
+                        <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/menu-close.svg" width="16" height="16" title="Close icon" alt="Close icon">
+                    </button>
+                </div>
+                <div class="header__nav__item">
+                    <a class="link  " href="" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+                        <span class="link__label">Why Ecomotion </span>
+                    </a>
+                </div>
+                <div class="header__nav__item">
+                    <a class="link  " href="" data-category="globalNav" data-action="linkClick" data-label="navPricing">
+                        <span class="link__label">Ecomotion</span>
+                    </a>
+                </div>
+                <div class="header__nav__item">
+                    <a class="link  " href="" data-category="globalNav" data-action="linkClick" data-label="navPricing">
+                        <span class="link__label">Ecomotion</span>
+                    </a>
+                </div>
+                <div class="header__nav__item">
+                    <a class="link  " href="" data-category="globalNav" data-action="linkClick" data-label="navPricing">
+                        <span class="link__label">Ecomotion</span>
+                    </a>
+                </div>
+                <div class="header__nav__item">
+                    <a class="link  " href="" data-category="globalNav" data-action="linkClick" data-label="navPricing">
+                        <span class="link__label">Ecomotion</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <main id="main">
+            <div class="industry-hero__wrap">
+                <div class="industry-hero industry-hero--air-quality industry-hero--grey">
+                    <div class="industry-hero__lottie ">
+                        
+                    </div>
+                    <div class="industry-hero__slides__foreground">
+                        <div class="industry-hero__slides__foreground__image  industry-hero__slides__foreground__image--active" foreground-image="">
+                            <img loading="lazy" src="./../../workspace/undefined" alt="" role="presentation">
+                        </div>
+                    </div>
+                    <div class="industry-hero__slides" slides="1" >
+                        <div class="industry-hero__slide industry-hero__slide--active" slide>
+                            <div class="industry-hero__slide__feature">
+                                <div class="industry-hero__slide__feature__background-asset ">
+                                    <picture>
+                                        
+                                      <img loading="lazy" src="https://lh3.googleusercontent.com/IDvzc7aS380CBIV2KPlsvPbu3QALInvfzktZAtuQuPkwC-HYuq3R59rn7XxA_bOHE8SvYdaUtDqyLfKlC4jcc2zW6HA0fUODn0a7NE8=w0" title="Air quality map with measurements and meter" alt="Air quality map with measurements and meter">
+                                  </picture>
+                                </div>
+                                <div class="industry-hero__slide__feature__container"> 
+                                    <div class="industry-hero__slide__feature__chapter">
+                                        <div class="industry-hero__slide__feature__chapter__eyebrow chapter__item">Eco Motion</div>
+                                        <h1 class="industry-hero__slide__feature__chapter__title chapter__item" role="heading" aria-level="1">Help your customers breathe&nbsp;safer</h1>
+                                        <div class="industry-hero__slide__feature__chapter__body chapter__item">Provide air quality data and insights that help people reduce their exposure to&nbsp;pollution.</div>
+                                        <div class="industry-hero__slide__feature__chapter__buttons chapter__item">
+                                            <div class="industry-hero__slide__feature__chapter__button">
+                                                <a class="button     button--tag" href="https://developers.google.com/maps/documentation/air-quality?hl=en&amp;utm_referrer=http%3A%2F%2F127.0.0.1%3A5500%2F" target="_blank" rel="noopener" data-append-utm="" data-category="productAirQuality" data-action="linkClick" data-label="docClickAirQualityAPI"> Download </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="industry-hero__slide__feature__image industry-hero__slide__feature__image--lottie ">
+                                          
+                                        <img src="https://media.istockphoto.com/id/1398817559/photo/man-with-his-eyes-closed-stands-in-the-street.jpg?s=612x612&w=0&k=20&c=IDwGjmyn6n0TeCITyPwwX8-R6v6BZFMI87cxcW7tVMQ=" alt="" style="width: 800px; height: 500px; padding: 10px 10px 0 0; border-radius: 20px;" >
+                                            
+                                    </div>
+                                </div>
+                                <div class="industry-hero__slide__feature__background-asset__foreground">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
+<script src="https://mapsplatform.google.com/static/js/main.min.js?fingerprint=c642903dcb5c3afda2ef07f3c99b68ca"></script>
+<script src="aplicate.js"></script>
 </html>
