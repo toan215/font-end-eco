@@ -121,6 +121,10 @@ function setupAnimation(model)
 
 
   let delay = 0;
+  tl.to(plane.rotation, { x: tau * .25, y: tau*1, z: 0, ease: 'power1.inOut' }, delay);
+  tl.to(plane.position, { x: -40, y: 0, z: -60, ease: 'power1.inOut' }, delay);
+
+  delay += sectionDuration;
 
   tl.to('.scroll-cta', { duration: 0.25, opacity: 0 }, delay);
   tl.to(plane.position, { x: -10, ease: 'power1.in' }, delay);
