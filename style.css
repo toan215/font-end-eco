@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 svg {
   z-index: 100;
+  position: absolute;
 }
 
 :root {
   --padding: 10vmin;
-  --color-background: #D0CBC7;
+  --color-background: white ;
   --font-size-large: 8vw;
   --font-size-medium: 4vw;
   --font-size-normal: 2vw;
@@ -17,6 +17,7 @@ svg {
     --font-size-medium: 32px;
     --font-size-normal: 16px;
   }
+  
 }
 @media only screen and (max-width: 500px) {
   :root {
@@ -24,7 +25,23 @@ svg {
     --font-size-medium: 20px;
     --font-size-normal: 14px;
   }
+  body .frame1 .solar_systm .planet {
+    bottom: 5570px;
+  }
 }
+@media (max-width: 900px) {
+  
+  body .frame1 .solar_systm .planet {
+    bottom: 4570px;
+  }
+}
+@media (max-width: 400px) {
+  
+  body .frame1 .solar_systm .planet {
+    bottom: 4570px;
+  }
+}
+
 
 a {
   color: white;
@@ -98,16 +115,7 @@ canvas {
   text-align: right;
 }
 
-.content .blueprint svg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  stroke: white;
-  pointer-events: none;
-  visibility: hidden;
-}
+
 .content .blueprint .dark {
   background-color: transparent;
 }
@@ -127,16 +135,23 @@ canvas {
   transform-origin: top center;
 }
 .content .ground-container .ground {
-  z-index: 1;
+  z-index: -1;
   background-image: url("https://assets.codepen.io/557388/background-reduced.jpg");
+  background-size: cover;
+	transform-origin: top center;
+  filter: saturate(10%);
 }
 .content .ground-container .clouds {
   z-index: 2;
   background-image: url("https://assets.codepen.io/557388/clouds.png");
 }
 .content .ground-container .factory{
-  z-index: 1;
-  background-image: url("https://images.ladbible.com/resize?type=webp&quality=70&width=1920&fit=contain&gravity=auto&url=https://images.ladbiblegroup.com/v3/assets/bltb5d92757ac1ee045/blt4f0b4e7fb302972c/66559079f020b8c8bbdedb98/cia-confirm-area-512.png");
+  z-index:-1;
+  filter: saturate(10%);
+  background-image: url("https://www.conspiracies.net/wp-content/uploads/2014/09/area51view.jpg");
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+	background-attachment: fixed;
+  
 }
 .content .scroll-cta, .content .credits {
   position: absolute;
@@ -147,9 +162,12 @@ canvas {
   opacity: 0;
 }
 .content .sunset {
+  z-index: -1;
   background: url("https://assets.codepen.io/557388/sunset-reduced.jpg") no-repeat top center;
   background-size: cover;
+ 
   transform-origin: top center;
+  filter: saturate(10%);
 }
 .content h1, .content h2 {
   font-size: var(--font-size-large);
@@ -219,7 +237,7 @@ body .frame1 .solar_systm .planet {
   transition: transform 2.8s 0.23s cubic-bezier(0.33, 0, 0, 1), opacity 2s 0.8s, box-shadow 0s 0s;
   background-size: 1140px 910px ;
   top: auto;
-  bottom: 6650px;
+  bottom: -600px;
 }
 
 body .frame1 .solar {
@@ -247,7 +265,7 @@ body .frame1 .overlay {
   left: -303px;
   opacity: 0.5;
   border-radius: 100%;
-  z-index: 0;
+  z-index: -2;
   box-shadow: 0px -190px 215px 110px black inset;
 }
 body .frame1 .solar_systm .planet.earth {
@@ -258,199 +276,59 @@ body .frame1 .solar_systm .planet.earth {
   opacity: 2;
   -webkit-animation: planet 60s 3.9s infinite linear;
   animation: planet 60s 3.9s infinite linear;
-  clip-path: inset(-120% -100% 67% -100%);
+  /* clip-path: inset(-10% -10% 70.2% -10%); */
+  left: -10%;
 }
 
-.div {
-  background-color: black;
-  padding-left: 0px;
+.orange{
+  background-color: #D96233 !important; 
+  color: black !important;
 }
-.div-2 {
-  gap: 20px;
-  display: flex;
-}
-.column {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 23%;
-  margin-left: 0px;
-}
-.div-3 {
-  justify-content: center;
-  display: flex;
-  flex-grow: 1;
-  gap: 0px;
-  font-size: 20px;
-  color: #fcfcfc;
-  font-weight: 400;
-  text-align: center;
-  padding: 26px 37px;
-}
-.div-4 {
-  font-family: Raleway, sans-serif;
-  margin: auto 0;
-}
-.column-2 {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 77%;
-  margin-left: 20px;
-}
-.div-5 {
-  flex-grow: 1;
-}
-
-.div-6 {
-  gap: 20px;
-  display: flex;
-}
-
-.column-3 {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 74%;
-  margin-left: 0px;
-}
-
-.div-7 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-grow: 1;
-  font-size: 24px;
-  color: #fcfcfc;
-  font-weight: 300;
-  text-align: center;
-  padding: 49px 60px;
+.white{
+  background-color: white !important;
+  color: black !important;
 }
 
 
-.div-8 {
-  display: flex;
-  width: 798px;
+.header {
   max-width: 100%;
-  gap: 20px;
-  justify-content: space-between;
-}
-.div-9 {
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-}
-.div-10 {
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-}
-.div-11 {
-  font-family: Raleway, sans-serif;
-}
-.div-12 {
-  font-family: Raleway, sans-serif;
-}
-.div-13 {
-  font-family: Raleway, sans-serif;
-}
-.column-4 {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 26%;
-  margin-left: 20px;
-}
-
-.div-14 {
-  justify-content: center;
-  display: flex;
-  flex-grow: 1;
-  gap: 20px;
-  font-size: 24px;
-  font-weight: 300;
   text-align: center;
-  padding: 28px 70px 28px 18px;
+  color: white;
+}
+.header h1{
+  font-family: 'Oleo Script';
+}
+.header p{
+  font-family: 'Oleo Script';
 }
 
-.div-15 {
-  color: #fff;
-  font-family: Raleway, sans-serif;
-  margin: auto 0;
-}
-.div-16 {
+.btn-item{
+  gap: 40px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  color: black;
   justify-content: center;
-}
-.div-17 {
-  font-family: Raleway, sans-serif;
-  border-radius: 32px;
-  background-color: #d96233;
-  justify-content: center;
-  padding: 23px 24px;
-}
 
-@keyframes clouds-loop-1 {
-  to {
-    background-position: -1000px 0;
-  }
-}
-.clouds-1 {
-  background-image: url("https://s.cdpn.io/15514/clouds_2.png");
-  animation: clouds-loop-1 20s infinite linear;
-}
-
-@keyframes clouds-loop-2 {
-  to {
-    background-position: -1000px 0;
-  }
-}
-.clouds-2 {
-  background-image: url("https://s.cdpn.io/15514/clouds_1.png");
-  animation: clouds-loop-2 15s infinite linear;
-}
-
-@keyframes clouds-loop-3 {
-  to {
-    background-position: -1579px 0;
-  }
-}
-.clouds-3 {
-  background-image: url("https://s.cdpn.io/15514/clouds_3.png");
-  animation: clouds-loop-3 17s infinite linear;
-}
-.frame2 {
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  /* background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000)); */
-  background: -moz-linear-gradient(#333333, #000000);
-  background: -webkit-linear-gradient(#333333, #000000);
-  background: linear-gradient(#333333, #000000);
-  text-align: center;
-  vertical-align: middle;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  position: relative;
   
 }
-
-.clouds {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  opacity: 0.4;
-  pointer-events: none;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
+.btn{
+  display: block;
+  width: 180px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Raleway';
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3;
+  -webkit-property: box-shadow, transform;
 }
-
-.clouds-1, .clouds-2, .clouds-3 {
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 500px;
+.btn:hover, .btn:focus, .btn:active{
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
