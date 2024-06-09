@@ -59,7 +59,6 @@ class Scene
     this.onResize();window.addEventListener('resize', this.onResize, false);var edges = new THREE.EdgesGeometry(model.children[0].geometry);let line = new THREE.LineSegments(edges);line.material.depthTest = false;line.material.opacity = 0.5;line.material.transparent = true;line.position.x = 0.5;line.position.z = -1;line.position.y = 0.2;this.modelGroup = new THREE.Group();model.layers.set(0);line.layers.set(1);this.modelGroup.add(model);this.modelGroup.add(line);this.scene.add(this.modelGroup);}}function loadModel()
 {
   gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(DrawSVGPlugin);
   
   var object;
 
