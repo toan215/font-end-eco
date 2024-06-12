@@ -2968,7 +2968,7 @@ animation: callback ease-in-out 3s 1s forwards;
 
     .text2 {
       top: 5%;
-      left: 50%;
+      left: 65.5%;
     }
   }
 
@@ -2976,15 +2976,16 @@ animation: callback ease-in-out 3s 1s forwards;
     .text >h4{
       
       font-size: 50px;
-      padding: 10px;
+      
     }
 
-    .text1, .text2 {
-      top: 5%;
-      left: 5%;
+    .text1{
+      top: 60%;
+      left: 0%;
     }
 
     .text2 {
-      left:  40%;
+		top: 60%;
+    	left:  50%;
     }
   }
