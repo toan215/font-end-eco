@@ -73,3 +73,5 @@ document.addEventListener("scroll", function() {
       window.location.href = "plane.html";
   }
 });
+window.addEventListener("scroll", redirectOnScrollOrOrientationChange);
+window.addEventListener("deviceorientation", redirectOnScrollOrOrientationChange);
