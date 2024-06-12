@@ -2852,7 +2852,7 @@ main{
 }
 .text2 {
 	top: 10%;
-    left: 80%;
+    left: 77.5%;
 	width: 400px;  
 	height: 175px; 
 	background-color: whitesmoke;
@@ -2954,11 +2954,11 @@ animation: callback ease-in-out 3s 1s forwards;
     height: 100%;
 }
 
-@media (max-width: 768px) {
-    .text >h4{
-      width: 150px;
+@media (max-height: 768px) {
+    h4{
+      
       height: auto;
-      font-size: large;
+      font-size: 50px;
     }
 
     .text1 {
@@ -2968,14 +2968,14 @@ animation: callback ease-in-out 3s 1s forwards;
 
     .text2 {
       top: 5%;
-      left: 70%;
+      left: 50%;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-height: 480px) {
     .text >h4{
-      width: 100px;
-      font-size: medium;
+      
+      font-size: 50px;
       padding: 10px;
     }
 
@@ -2985,6 +2985,6 @@ animation: callback ease-in-out 3s 1s forwards;
     }
 
     .text2 {
-      left:  70%;
+      left:  40%;
     }
   }
