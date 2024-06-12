@@ -53,6 +53,7 @@ html, body{
 	padding:0;
 	margin:0;
 	overflow:hidden;
+
 }
 
 body::before{
@@ -65,6 +66,7 @@ body::before{
 	background-image:linear-gradient(55deg, #03080D 40%, #010407);
 	background-size: 100% 100%;
 	display: block;
+
 }
 
 main{
@@ -2828,8 +2830,58 @@ main{
 	align-items: center;
 	justify-content: center;
 	will-change: transform;
+	background-color:rgb(82, 71, 59);
 }
 
+.text1 {
+	top: 10%;
+    left: 1%;
+	width: 400px;  
+	height: 175px; 
+	transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
+	will-change: transform;
+	position:absolute;
+	z-index: 4000;
+	opacity: 0;
+    color: rgb(80, 64, 34);
+	font-size:xxx-large;
+	background-color: whitesmoke;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
+	padding-bottom: 5px;
+}
+.text2 {
+	top: 10%;
+    left: 80%;
+	width: 400px;  
+	height: 175px; 
+	background-color: whitesmoke;
+	transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
+	will-change: transform;
+	position: absolute;
+	z-index: 4000;
+	opacity: 0;
+    color: rgb(28, 46, 23);
+	font-size:xxx-large;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text1.visible {
+    opacity: 1; 
+}
+
+.text2.visible {
+    opacity: 1; 
+}
+
+.text > h4 {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding-left: 14px;
+}
 .card {
 	width: 400px;  
 	height: 150px; 
@@ -2848,12 +2900,15 @@ main{
 	text-decoration: none; 
     color: black;
 	font-size:xxx-large;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
 }
+
 
 .card:hover {
 	box-shadow: 0 0 75px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
 	mix-blend-mode: hard-light;
 	filter: grayscale(100%);
+	color: wheat;
 }
 
 .card.visible {
@@ -2898,3 +2953,38 @@ animation: callback ease-in-out 3s 1s forwards;
     display: block; /* Default content display */
     height: 100%;
 }
+
+@media (max-width: 768px) {
+    .text >h4{
+      width: 150px;
+      height: auto;
+      font-size: large;
+    }
+
+    .text1 {
+      top: 5%;
+      left: 0%;
+    }
+
+    .text2 {
+      top: 5%;
+      left: 70%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .text >h4{
+      width: 100px;
+      font-size: medium;
+      padding: 10px;
+    }
+
+    .text1, .text2 {
+      top: 5%;
+      left: 5%;
+    }
+
+    .text2 {
+      left:  70%;
+    }
+  }

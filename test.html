@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" style='width:100%; height:100%;'>
+<head>
+  <meta charset="UTF-8">
+  <title>ECO MOTION</title>
+</head>
+<body style='width:100%; height:100%;'>
+<div  id='map'  style='width:100%; height:100%;' ></div>  
+<link  rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css"  />  
+<script  src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>  
+  
+<script>  
+    var  OSM_URL  =  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';  
+    var  OSM_ATTRIB  =  '&copy;  <a  href="http://openstreetmap.org/copyright">OpenStreetMap</a>  contributors';  
+    var  osmLayer  =  L.tileLayer(OSM_URL,  {  attribution:  OSM_ATTRIB  });  
+
+    var  WAQI_URL  =  "https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=10eff006ec31b515737b4e48647a0d535de258a8";  
+    var  WAQI_ATTR  =  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>';  
+    var  waqiLayer  =  L.tileLayer(WAQI_URL,  {  attribution:  WAQI_ATTR  });  
+
+    var  map  =  L.map('map').setView([15.35041,108.16041],  5);  
+    map.addLayer(osmLayer).addLayer(waqiLayer);  
+</script>
+</body>
+</html>

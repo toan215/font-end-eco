@@ -124,3 +124,23 @@ checkOrientation();
 
 // Add event listener for orientation change
 window.addEventListener('resize', checkOrientation);
+
+function showtext1() {
+    document.getElementById("text1").style.visibility = "visible";
+}
+
+function showtext1() {
+    document.getElementById("text1").classList.add("visible");
+}
+
+setTimeout(showtext1, 2000);
+
+function showtext2() {
+    document.getElementById("text2").style.visibility = "visible";
+}
+
+function showtext2() {
+    document.getElementById("text2").classList.add("visible");
+}
+
+setTimeout(showtext2, 4000);

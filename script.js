@@ -46,10 +46,10 @@ function RGB(hex) {
     }
   })(0)
 
-  $('container').css('margin-top', $(window).innerHeight());
+  $('container').css('margin-top', $(window).innerHeight()/2);
 
   $(window).resize(function(){
-    $('container').css('margin-top', $(window).innerHeight());
+    $('container').css('margin-top', $(window).innerHeight()/2);
     $('container svg').css('border-bottom-width', $(window).innerHeight() + 'px');
   });
 
