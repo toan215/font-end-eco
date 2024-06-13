@@ -5,7 +5,7 @@ svg {
 }
 
 :root {
-  --padding: 10vmin;
+  --padding: 2vmin;
   --color-background: black ;
   --font-size-large: 64px;
   --font-size-medium: 32px;
@@ -333,8 +333,11 @@ container {
   }
 }
 
+.text{
+  padding-top: 6vmin;
+}
 
-@media only screen and (min-width: 766px) {
+@media only screen and (min-width: 1000px) and (min-device-width: 1000px) {
   body .frame1 .solar_systm .planet {
     height: 1000px;
     width: 1000px;
@@ -343,6 +346,6 @@ container {
     bottom: -400px;
   }
   :root{
-    --padding: 5vmin;
+    --padding: 10vmin;
   }
 }
