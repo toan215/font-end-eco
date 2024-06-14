@@ -90,3 +90,13 @@ checkOrientation();
 
 // Add event listener for orientation change
 window.addEventListener('resize', checkOrientation);
+
+function redirectOnScrollOrOrientationChange() {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    window.location.href = "plane.html";
+  }
+}
+
+window.addEventListener("scroll", redirectOnScrollOrOrientationChange);
+window.addEventListener("resize", redirectOnScrollOrOrientationChange); 
+window.addEventListener("orientationchange", redirectOnScrollOrOrientationChange);
