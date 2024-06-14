@@ -291,8 +291,11 @@ function getRandomPos_3() {
 	return { x, y };
 }
 
-document.addEventListener("scroll", function() {
+function redirectOnScrollOrOrientationChange() {
   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      window.location.href = "factory.html";
+    window.location.href = "factory.html";
   }
-});
+}
+
+window.addEventListener("scroll", redirectOnScrollOrOrientationChange);
+window.addEventListener("deviceorientation", redirectOnScrollOrOrientationChange);
