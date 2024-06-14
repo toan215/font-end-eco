@@ -120,7 +120,7 @@ canvas {
   transform-origin: top center;
 }
 .content .ground-container .ground {
-  z-index: -1;
+  z-index: -2;
   background-image: url("https://assets.codepen.io/557388/background-reduced.jpg");
   background-size: cover;
 	transform-origin: top center;
@@ -131,7 +131,7 @@ canvas {
   background-image: url("https://assets.codepen.io/557388/clouds.png");
 }
 .content .ground-container .factory{
-  z-index:-1;
+  z-index:-2;
   filter: saturate(10%);
   background-image: url("https://www.conspiracies.net/wp-content/uploads/2014/09/area51view.jpg");
 	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
