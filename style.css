@@ -79,52 +79,8 @@ canvas {
   margin: 0;
   z-index: 2;
 }
-.content .section.dark {
-  color: white;
-  background-color: black;
-}
-.content .section.right {
-  text-align: right;
-}
 
 
-.content .blueprint .dark {
-  background-color: transparent;
-}
-.content .ground-container {
-  position: relative;
-  overflow: hidden;
-}
-.content .ground-container .parallax {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: -100px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  transform-origin: top center;
-}
-.content .ground-container .ground {
-  z-index: -1;
-  background-image: url("https://assets.codepen.io/557388/background-reduced.jpg");
-  background-size: cover;
-	transform-origin: top center;
-  filter: saturate(10%);
-}
-.content .ground-container .clouds {
-  z-index: 2;
-  background-image: url("https://assets.codepen.io/557388/clouds.png");
-}
-.content .ground-container .factory{
-  z-index:-1;
-  filter: saturate(10%);
-  background-image: url("https://www.conspiracies.net/wp-content/uploads/2014/09/area51view.jpg");
-	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
-	background-attachment: fixed;
-  
-}
 .content .scroll-cta, .content .credits {
   position: absolute;
   bottom: var(--padding);
@@ -260,9 +216,11 @@ body .frame1 .solar_systm .planet.earth {
   color: white;
 }
 .header h1{
+  font-size: var(--font-size-large);
   font-family: 'Oleo Script';
 }
 .header p{
+  font-size: var(--font-size-normal);
   font-family: 'Oleo Script';
 }
 
@@ -334,76 +292,67 @@ container {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-height: 800px) {
   :root {
     --font-size-large: 64px;
     --font-size-medium: 32px;
     --font-size-normal: 16px;
-    --padding: 3vmin;
   }
   
 }
-@media only screen and (max-width: 680px) {
-  :root {
-    --font-size-large: 64px;
-    --font-size-medium: 48px;
-    --font-size-normal: 32px;
-    --padding: 0vmin;
-  }
-  body .frame1 .solar_systm .planet {
-    height: 600px;
-    width: 600px;
-    border-radius: 300px;
-    background-size: 570px 460px;
-    bottom: -200px;
-    padding-left: 1vmin;
-  }
-  body .frame1 .solar_systm .planet.earth {
-    box-shadow: 0 -390px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9;
-  }
+@media only screen and (max-height: 500px) {
+    :root {
+      --font-size-large: 30px;
+      --font-size-medium: 20px;
+      --font-size-normal: 10px;
+    }
+    body .frame1 .solar_systm .planet {
+      height: 600px;
+      width: 600px;
+      border-radius: 300px;
+      background-size: 570px 460px;
+      bottom: -320px;
+    }
+    body .frame1 .overlay{
+      box-shadow: none;
+    }
+    .btn{
+      z-index: 1;
+      font-size: 10px;
+      width: 120px;
+      padding: 4px;
+    
+    }
 }
 
-@media only screen and (max-width: 1200px) {
-  body .frame1 .solar_systm .planet {
-    height: 1000px;
-    width: 1000px;
-    border-radius: 500px;
-    background-size: 950px 760px;
-    bottom: -500px;
-  }
+
+
+
+#rotate-message {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-@media only screen and (max-width: 768px) {
-  body .frame1 .solar_systm .planet {
-    width: 800px;
-    border-radius: 400px;
-    background-size: 760px 610px;
-    bottom: -400px;
-  }
+#rotate-message p {
+  margin: 0;
+}
+#content {
+  display: block; /* Default content display */
+  height: 100%;
 }
 
-@media only screen and (max-width: 576px) {
-  body .frame1 .solar_systm .planet {
-    height: 600px;
-    width: 600px;
-    border-radius: 300px;
-    background-size: 570px 460px;
-    bottom: -200px;
-    padding-left: 1vmin;
-  }
-  .text {
-    position: absolute;
-    padding-bottom: 300px;
-  }
+#contents {
+  display: block; /* Default content display */
+  height: 100%;
 }
-
-@media only screen and (max-width: 360px) {
-  body .frame1 .solar_systm .planet {
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
-    background-size: 380px 310px;
-    bottom: -200px;
-  }
-}
-

@@ -3,42 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Introducing - Eco Motion</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/e78c65adf1db19f37218b8a3b713bac98398ba0122612d73ae391e7b46ac87c4?apiKey=f8ad55ab573f48608f7cfe6da6119bf8&">
   <link rel="stylesheet" href="./style.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="content">
-    <section class="frame1 section header">
-      <div class="text">
-        <h1>Make the world</h1>
-        <br>
-        <h1>better.</h1>
-        <p>Start with small steps and have a big impact on the world we are living in.</p>
-        
-        <div class="btn-item">
-          <a href="application.html" class="btn orange">Take Action</a>
-          <a href="application.html" class="btn white">More Details</a>
-        </div>
-      </div>
-      <div class="solar">
-        <div class="solar_systm">
-          <div class="planet earth">
-            <div class="overlay"></div>
+  <div id="rotate-message">
+    <p>Please rotate your device to landscape mode.</p>
+  </div>
+  <main id="contents">
+    <div class="content">
+      <section class="frame1 section header">
+        <div class="text">
+          <h1>Make the world</h1>
+          <br>
+          <h1>better.</h1>
+          <p>Start with small steps and have a big impact on the world we are living in.</p>
+          
+          <div class="btn-item">
+            <a href="application.html" class="btn orange">Take Action</a>
+            <a href="application.html" class="btn white">More Details</a>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <container>
-    <svg id="tmp" viewBox="0 0 100 100">
-      <path d="M-5 105 Q 50 50 50 0, Q 50 50 105 105" />
-    </svg>
-  </container>
-  <div id="msg"></div>
+        <div class="solar">
+          <div class="solar_systm">
+            <div class="planet earth">
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <container>
+      <svg id="tmp" viewBox="0 0 100 100">
+        <path d="M-5 105 Q 50 50 50 0, Q 50 50 105 105" />
+      </svg>
+    </container>
+    <div id="msg"></div>
+  </main>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./script.js"></script>
 </body>
