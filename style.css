@@ -311,7 +311,7 @@ container {
       width: 600px;
       border-radius: 300px;
       background-size: 570px 460px;
-      bottom: -320px;
+      bottom: -300px;
     }
     body .frame1 .overlay{
       box-shadow: none;
@@ -322,6 +322,9 @@ container {
       width: 120px;
       padding: 4px;
     
+    }
+    body .frame1 .solar_systm .planet.earth {
+      box-shadow: 0 -490px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9;
     }
 }
 
