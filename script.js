@@ -68,11 +68,6 @@ function RGB(hex) {
     }
   });
 })();
-document.addEventListener("scroll", function() {
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      window.location.href = "plane.html";
-  }
-});
 function checkOrientation() {
   if (window.innerHeight > window.innerWidth) {
       // Portrait mode
@@ -90,3 +85,33 @@ checkOrientation();
 
 // Add event listener for orientation change
 window.addEventListener('resize', checkOrientation);
+
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+let hasRedirected = false;
+
+function checkScroll() {
+  console.log("Window Inner Height: ", window.innerHeight);
+  console.log("Window ScrollY: ", window.scrollY);
+  console.log("Document Body Offset Height: ", document.body.offsetHeight);
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && !hasRedirected) {
+    hasRedirected = true;
+    window.location.href = "plane.html";
+  }
+}
+
+function handleScroll() {
+  debounce(checkScroll, 100)();
+}
+
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("resize", handleScroll); 
+
+window.addEventListener("load", checkScroll);
