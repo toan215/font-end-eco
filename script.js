@@ -68,6 +68,11 @@ function RGB(hex) {
     }
   });
 })();
+document.addEventListener("scroll", function() {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      window.location.href = "plane.html";
+  }
+});
 function checkOrientation() {
   if (window.innerHeight > window.innerWidth) {
       // Portrait mode
