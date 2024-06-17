@@ -18,7 +18,6 @@ checkOrientation();
 // Add event listener for orientation change
 window.addEventListener('resize', checkOrientation);
 
-let isCheckingScroll = false;
 
 
 
