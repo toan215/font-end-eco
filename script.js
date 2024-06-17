@@ -40,6 +40,5 @@ window.addEventListener("resize", handleScroll);
 
 // Initial check on page load
 window.addEventListener("load", handleScroll);
-=======
 window.addEventListener('resize', checkOrientation);
->>>>>>> 60f44717c48a6a73c2022a2730d1eb39c900a683
+
