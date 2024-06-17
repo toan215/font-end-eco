@@ -288,8 +288,8 @@ loadModel();
 // 		Math.random() * (document.documentElement.clientHeight - 150)
 // 	);
 
-	return { x, y };
-}
+// 	return { x, y };
+// }
 function debounce(func, wait) {
   let timeout;
   return function(...args) {
@@ -310,5 +310,11 @@ function checkScroll() {
   }
 }
 
-window.addEventListener("scroll", redirectOnScrollOrOrientationChange);
-window.addEventListener("deviceorientation", redirectOnScrollOrOrientationChange);
+function handleScroll() {
+  debounce(checkScroll, 100)();
+}
+
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("resize", handleScroll); 
+
+window.addEventListener("load", checkScroll);

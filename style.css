@@ -1,9 +1,4 @@
 
-svg {
-  z-index: 100;
-  position: absolute;
-}
-
 :root {
   --padding: 10vmin;
   --color-background: black ;
@@ -12,23 +7,11 @@ svg {
   --font-size-normal: 16px;
 }
 
-a {
-  color: white;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  margin-top: 10px;
-}
 
 html {
   overflow-y: auto;
 }
+
 html, body {
   margin: 0;
   min-height: 100%;
@@ -40,36 +23,6 @@ html, body {
   overflow-x: hidden;
 }
 
-canvas {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.solid {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.wireframe {
-  -webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-}
-.content .trigger {
-  position: absolute;
-  top: 0;
-  height: 100%;
-}
 .content .section {
   position: relative;
   padding: var(--padding);
@@ -81,47 +34,13 @@ canvas {
 }
 
 
-.content .scroll-cta, .content .credits {
-  position: absolute;
-  bottom: var(--padding);
-}
-.content .scroll-cta {
-  font-size: var(--font-size-medium);
-  opacity: 0;
-}
-.content .sunset {
-  z-index: -1;
-  background: url("https://assets.codepen.io/557388/sunset-reduced.jpg") no-repeat top center;
-  background-size: cover;
- 
-  transform-origin: top center;
-  filter: saturate(10%);
-}
 .content h1, .content h2 {
   font-size: var(--font-size-large);
   margin: 0vmin 0 2vmin 0;
   font-weight: 700;
   display: inline;
 }
-.content h3 {
-  font-size: var(--font-size-medium);
-  font-weight: 400;
-  margin: 0;
-}
-.content .end h2 {
-  margin-bottom: 50vh;
-}
-.content .loading {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size-medium);
-}
+
 
 @keyframes planet {
   from {
@@ -224,13 +143,12 @@ body .frame1 .solar_systm .planet.earth {
   font-family: 'Oleo Script';
 }
 
+/* buttons */
 .btn-item{
   gap: 40px;
   max-width: 100%;
   display: flex;
   justify-content: center;
-
-  
 }
 .btn{
   display: block;
@@ -255,43 +173,7 @@ body .frame1 .solar_systm .planet.earth {
   transform: scale(1.1);
 }
 
-container {
-  display: block;
-  position: relative;
-
-  svg {
-    width: 100%;
-    height: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: transparent;
-    stroke-width: 0;
-  }
-}
-
-#msg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: rgba(white, 0.7);
-  font-size: 2em;
-  font-weight: bold;
-  z-index: -1;
-
-  &.prep {
-    z-index: 5;
-    opacity: 0;
-  }
-}
-
-
+/* media queries */
 @media only screen and (min-height: 800px) {
   :root {
     --font-size-large: 64px;
@@ -327,9 +209,6 @@ container {
       box-shadow: 0 -490px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9;
     }
 }
-
-
-
 
 #rotate-message {
   display: none; /* Hidden by default */
