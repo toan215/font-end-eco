@@ -85,33 +85,25 @@ checkOrientation();
 
 // Add event listener for orientation change
 window.addEventListener('resize', checkOrientation);
-
-
-function debounce(func, wait) {
-  let timeout;
-  return function(...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
-}
-
-let hasRedirected = false;
+let isCheckingScroll = false;
 
 function checkScroll() {
-  console.log("Window Inner Height: ", window.innerHeight);
-  console.log("Window ScrollY: ", window.scrollY);
-  console.log("Document Body Offset Height: ", document.body.offsetHeight);
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && !hasRedirected) {
-    hasRedirected = true;
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
     window.location.href = "plane.html";
   }
+  isCheckingScroll = false;
 }
 
 function handleScroll() {
-  debounce(checkScroll, 100)();
+  if (!isCheckingScroll) {
+    isCheckingScroll = true;
+    requestAnimationFrame(checkScroll);
+  }
 }
 
+// Attach scroll and resize event listeners
 window.addEventListener("scroll", handleScroll);
-window.addEventListener("resize", handleScroll); 
+window.addEventListener("resize", handleScroll);
 
-window.addEventListener("load", checkScroll);
+// Initial check on page load
+window.addEventListener("load", handleScroll);

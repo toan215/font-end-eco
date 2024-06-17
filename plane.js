@@ -191,105 +191,105 @@ function setupAnimation(model)
 
 loadModel();
 
-const cloudLayer = document.querySelector(".cloud-layer");
+// const cloudLayer = document.querySelector(".cloud-layer");
 
-const clouds = 50;
+// const clouds = 5;
 
-document.addEventListener("DOMContentLoaded", createClouds(clouds));
-
-
-
-function createClouds(num) {
-	const frag = document.createDocumentFragment();
-	const positions = Array.from({ length: num }, () => getRandomPos());
-	//console.log(positions);
-
-	for (let i = 0; i < num; i++) {
-		const { x, y } = positions[i];
-		const newCloud = document.createElement("div");
-		newCloud.classList.add("cloud");
-		newCloud.style.cssText = `right: ${x}px; bottom: ${y}px;`;
-	  frag.append(newCloud);
-	}
-	cloudLayer.append(frag);
-}
+// document.addEventListener("DOMContentLoaded", createClouds(clouds));
 
 
-function getRandomPos() {
-	const x = Math.floor(
-		Math.random() * (document.documentElement.clientWidth -150)
-	);
-	const y = Math.floor(
-		Math.random() * (document.documentElement.clientHeight -150)
-	);
 
-	return { x, y };
-}
+// function createClouds(num) {
+// 	const frag = document.createDocumentFragment();
+// 	const positions = Array.from({ length: num }, () => getRandomPos());
+// 	//console.log(positions);
 
-const cloudLayer2 = document.querySelector(".cloud-layer_2");
+// 	for (let i = 0; i < num; i++) {
+// 		const { x, y } = positions[i];
+// 		const newCloud = document.createElement("div");
+// 		newCloud.classList.add("cloud");
+// 		newCloud.style.cssText = `right: ${x}px; bottom: ${y}px;`;
+// 	  frag.append(newCloud);
+// 	}
+// 	cloudLayer.append(frag);
+// }
 
-const clouds2 = 50;
 
-document.addEventListener("DOMContentLoaded", createClouds_2(clouds2));
+// function getRandomPos() {
+// 	const x = Math.floor(
+// 		Math.random() * (document.documentElement.clientWidth -150)
+// 	);
+// 	const y = Math.floor(
+// 		Math.random() * (document.documentElement.clientHeight -150)
+// 	);
+
+// 	return { x, y };
+// }
+
+// const cloudLayer2 = document.querySelector(".cloud-layer_2");
+
+// const clouds2 = 5;
+
+// document.addEventListener("DOMContentLoaded", createClouds_2(clouds2));
 
 
-function createClouds_2 (number) {
-	const frag2 = document.createDocumentFragment();
-	const positions2 = Array.from({ length: number }, () => getRandomPos2());
-	// console.log(positions);
+// function createClouds_2 (number) {
+// 	const frag2 = document.createDocumentFragment();
+// 	const positions2 = Array.from({ length: number }, () => getRandomPos2());
+// 	// console.log(positions);
 
-	for (let j = 0; j < number; j++) {
-		const { x, y } = positions2[j];
-		const newCloud_2 = document.createElement("div");
-		newCloud_2.classList.add("cloud_2");
-		newCloud_2.style.cssText = `right: ${x}px; bottom: ${y}px;`;
-		frag2.append(newCloud_2);
-	}
-	cloudLayer2.append(frag2);
-}
+// 	for (let j = 0; j < number; j++) {
+// 		const { x, y } = positions2[j];
+// 		const newCloud_2 = document.createElement("div");
+// 		newCloud_2.classList.add("cloud_2");
+// 		newCloud_2.style.cssText = `right: ${x}px; bottom: ${y}px;`;
+// 		frag2.append(newCloud_2);
+// 	}
+// 	cloudLayer2.append(frag2);
+// }
 
-function getRandomPos2() {
-	const x = Math.floor(
-		Math.random() * (document.documentElement.clientWidth - 150)
-	);
-	const y = Math.floor(
-		Math.random() * (document.documentElement.clientHeight - 150)
-	);
+// function getRandomPos2() {
+// 	const x = Math.floor(
+// 		Math.random() * (document.documentElement.clientWidth - 150)
+// 	);
+// 	const y = Math.floor(
+// 		Math.random() * (document.documentElement.clientHeight - 150)
+// 	);
 
-	return { x, y };
-}
+// 	return { x, y };
+// }
 
-const cloudLayer3 = document.querySelector(".cloud-layer_3");
+// const cloudLayer3 = document.querySelector(".cloud-layer_3");
 
-const clouds3 = 50;
+// const clouds3 = 5;
 
-document.addEventListener("DOMContentLoaded", createClouds_3(clouds3));
+// document.addEventListener("DOMContentLoaded", createClouds_3(clouds3));
 
-function createClouds_3(numbers) {
-	const frag3 = document.createDocumentFragment();
-	const positions3 = Array.from({ length: numbers }, () => getRandomPos_3());
-	console.log(positions3);
+// function createClouds_3(numbers) {
+// 	const frag3 = document.createDocumentFragment();
+// 	const positions3 = Array.from({ length: numbers }, () => getRandomPos_3());
+// 	console.log(positions3);
 
-	for (let n = 0; n < numbers; n++) {
-		const { x, y } = positions3[n];
-		const newCloud_3 = document.createElement("div");
-		newCloud_3.classList.add("cloud_3");
-		newCloud_3.style.cssText = `right: ${x}px; bottom: ${y}px;`;
-		frag3.append(newCloud_3);
-	}
-	cloudLayer3.append(frag3);
-}
+// 	for (let n = 0; n < numbers; n++) {
+// 		const { x, y } = positions3[n];
+// 		const newCloud_3 = document.createElement("div");
+// 		newCloud_3.classList.add("cloud_3");
+// 		newCloud_3.style.cssText = `right: ${x}px; bottom: ${y}px;`;
+// 		frag3.append(newCloud_3);
+// 	}
+// 	cloudLayer3.append(frag3);
+// }
 
-function getRandomPos_3() {
-	const x = Math.floor(
-		Math.random() * (document.documentElement.clientWidth - 150)
-	);
-	const y = Math.floor(
-		Math.random() * (document.documentElement.clientHeight - 150)
-	);
+// function getRandomPos_3() {
+// 	const x = Math.floor(
+// 		Math.random() * (document.documentElement.clientWidth - 150)
+// 	);
+// 	const y = Math.floor(
+// 		Math.random() * (document.documentElement.clientHeight - 150)
+// 	);
 
-	return { x, y };
-}
+// 	return { x, y };
+// }
 function debounce(func, wait) {
   let timeout;
   return function(...args) {
