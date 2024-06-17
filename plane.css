@@ -19,11 +19,12 @@ svg {
   }
   
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-height: 500px) {
   :root {
-    --font-size-large: 40px;
+    --font-size-large: 28px;
     --font-size-medium: 20px;
-    --font-size-normal: 14px;
+    --font-size-normal: 10px;
   }
 }
 
@@ -91,6 +92,9 @@ canvas {
   height: calc(100vh - var(--pad2));
   margin: 0 auto;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 .content .section.dark {
   color: white;
@@ -98,6 +102,7 @@ canvas {
 }
 .content .section.right {
   text-align: right;
+  bottom:200px
 }
 
 
@@ -127,7 +132,7 @@ canvas {
   filter: saturate(10%);
 }
 .content .ground-container .clouds {
-  z-index: 2;
+  z-index: 1;
   background-image: url("https://assets.codepen.io/557388/clouds.png");
 }
 .content .ground-container .factory{
@@ -136,6 +141,58 @@ canvas {
   background-image: url("https://www.conspiracies.net/wp-content/uploads/2014/09/area51view.jpg");
 	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
 	background-attachment: fixed;
+  
+}
+.content .cloud-cover1{
+  position: absolute;
+  overflow: hidden;
+  top: 32%;
+  left: 1%;
+  right: 0;
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-size:150%;
+  z-index: 2;
+  background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
+  
+}
+.content .cloud-cover2{
+  position: absolute;
+  overflow: hidden;
+  top: 32.5%;
+  left: -40%;
+  right: 40%;
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-size:100%;
+  z-index: 2;
+  background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
+  
+}
+.content .cloud-cover3{
+  position: absolute;
+  overflow: hidden;
+  top: 77%;
+  left: 1%;
+  right: 0;
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-size:150%;
+  z-index: 2;
+  background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
+  
+}
+.content .cloud-cover4{
+  position:absolute;
+  overflow: hidden;
+  top: 77%;
+  left: -40%;
+  right: 40%;
+  bottom: 100px;
+  background-repeat: no-repeat;
+  background-size:100%;
+  z-index: 2;
+  background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
   
 }
 .content .scroll-cta, .content .credits {
@@ -147,7 +204,7 @@ canvas {
   opacity: 0;
 }
 .content .sunset {
-  z-index: -1;
+  z-index: 10;
   background: url("https://assets.codepen.io/557388/sunset-reduced.jpg") no-repeat top center;
   background-size: cover;
  
@@ -159,15 +216,27 @@ canvas {
   margin: 0vmin 0 2vmin 0;
   font-weight: 700;
   display: inline;
+  text-shadow: 4px #fff;
+  font-family: 'Oleo Script';
+  z-index: 11;
 }
 .content h3 {
   font-size: var(--font-size-medium);
   font-weight: 400;
   margin: 0;
 }
-.content .end h2 {
-  margin-bottom: 50vh;
+a {
+  font-size: var(--font-size-large);
+  display: inline-flex;
+  justify-content: center;
+  color:black;
+  font-family: 'Oleo Script';
+  z-index: 1000;
+  position: absolute;
+  left:45%;
+  top:90%
 }
+
 .content .loading {
   position: fixed;
   width: 100vw;
