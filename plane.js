@@ -40,7 +40,7 @@ class Scene
     () =>
     {
       this.w = window.innerWidth;
-      this.h = window.innerHeight;
+      this.h = window.innerHeight*3/4;
 
       for (var ii = 0; ii < this.views.length; ++ii) {
         var view = this.views[ii];
@@ -190,3 +190,42 @@ function setupAnimation(model)
 }
 
 loadModel();
+
+
+function checkOrientation() {
+  if (window.innerHeight > 2*window.innerWidth) {
+      // Portrait mode
+      document.getElementById('rotate-message').style.display = 'flex';
+      document.getElementById('content').style.display = 'none';
+  } else {
+      // Landscape mode
+      document.getElementById('rotate-message').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+  }
+}
+
+// Initial check
+checkOrientation();
+
+// Add event listener for orientation change
+window.addEventListener('resize', checkOrientation);
+
+function showtext1() {
+  document.getElementById("text1").style.visibility = "visible";
+}
+
+function showtext1() {
+  document.getElementById("text1").classList.add("visible");
+}
+
+setTimeout(showtext1, 2000);
+
+function showtext2() {
+  document.getElementById("text2").style.visibility = "visible";
+}
+
+function showtext2() {
+  document.getElementById("text2").classList.add("visible");
+}
+
+setTimeout(showtext2, 4000);
