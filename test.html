@@ -17,9 +17,9 @@
 
     var  WAQI_URL  =  "https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=10eff006ec31b515737b4e48647a0d535de258a8";  
     var  WAQI_ATTR  =  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>';  
-    var  waqiLayer  =  L.tileLayer(WAQI_URL,  {  attribution:  WAQI_ATTR  });  
+    var  waqiLayer  =  L.tileLayer(WAQI_URL,  {  attribution:  WAQI_ATR  });  
 
-    var  map  =  L.map('map').setView([15.35041,108.16041],  5);  
+    var  map  =  L.map('map').setView([15.35041,108.16041],  8);  
     map.addLayer(osmLayer).addLayer(waqiLayer);  
 </script>
 </body>
