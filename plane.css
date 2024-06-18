@@ -7,30 +7,26 @@ svg {
 :root {
   --padding: 10vmin;
   --color-background: white ;
-  --font-size-large: 8vw;
-  --font-size-medium: 4vw;
-  --font-size-normal: 2vw;
-}
-@media only screen and (min-width: 800px) {
-  :root {
-    --font-size-large: 64px;
-    --font-size-medium: 32px;
-    --font-size-normal: 16px;
-  }
-  
+  --font-size-large: 4vw;
+  --font-size-medium: 3vw;
+  --font-size-normal: 1vw;
 }
 
-@media only screen and (max-height: 500px) {
-  :root {
-    --font-size-large: 28px;
-    --font-size-medium: 20px;
-    --font-size-normal: 10px;
-  }
-}
 
 
 a {
-  color: white;
+  font-size: var(--font-size-large);
+  display: inline-flex;
+  justify-content: center;
+  color:black;
+  font-family: 'Oleo Script';
+  z-index: 1000;
+  position: absolute;
+  left:46vw;
+  top:85%;
+  text-decoration: none;  
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 2px 2px 5px 5px;
 }
 
 ul {
@@ -102,7 +98,7 @@ canvas {
 }
 .content .section.right {
   text-align: right;
-  bottom:200px
+  z-index: 100;
 }
 
 
@@ -143,7 +139,7 @@ canvas {
 	background-attachment: fixed;
   
 }
-.content .cloud-cover1{
+.cloud-cover1{
   position: absolute;
   overflow: hidden;
   top: 32%;
@@ -156,7 +152,7 @@ canvas {
   background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
   
 }
-.content .cloud-cover2{
+.cloud-cover2{
   position: absolute;
   overflow: hidden;
   top: 32.5%;
@@ -169,7 +165,7 @@ canvas {
   background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
   
 }
-.content .cloud-cover3{
+.cloud-cover3{
   position: absolute;
   overflow: hidden;
   top: 77%;
@@ -182,10 +178,10 @@ canvas {
   background-image: url(https://mydaymaker.com/wp-content/uploads/2023/10/AdobeStock_563966226-1024x495.png);
   
 }
-.content .cloud-cover4{
+.cloud-cover4{
   position:absolute;
   overflow: hidden;
-  top: 77%;
+  top: 78%;
   left: -40%;
   right: 40%;
   bottom: 100px;
@@ -207,7 +203,6 @@ canvas {
   z-index: 10;
   background: url("https://assets.codepen.io/557388/sunset-reduced.jpg") no-repeat top center;
   background-size: cover;
- 
   transform-origin: top center;
   filter: saturate(10%);
 }
@@ -224,17 +219,6 @@ canvas {
   font-size: var(--font-size-medium);
   font-weight: 400;
   margin: 0;
-}
-a {
-  font-size: var(--font-size-large);
-  display: inline-flex;
-  justify-content: center;
-  color:black;
-  font-family: 'Oleo Script';
-  z-index: 1000;
-  position: absolute;
-  left:45%;
-  top:90%
 }
 
 .content .loading {
@@ -300,4 +284,63 @@ a {
   box-shadow: 0 0 20px rgb(255, 255, 255);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+#rotate-message {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#rotate-message p {
+  margin: 0;
+}
+
+#content {
+  display: block; /* Default content display */
+  height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --font-size-large: 42px;
+    --font-size-medium: 26px;
+    --font-size-normal: 16px;
+  }
+  a {
+    left: 43vw;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  :root {
+    --font-size-large: 28px;
+    --font-size-medium: 20px;
+    --font-size-normal: 10px;
+  }
+}
+
+@media only screen and  (max-width:1024px) and (min-height: 1000px){
+  .cloud-cover1{
+    top:34%;
+  }
+  .cloud-cover2{
+    top:35%;
+  }
+  .cloud-cover3 {
+    top:80%;
+  } 
+  .cloud-cover4{
+    top:80%;
+  } 
 }
