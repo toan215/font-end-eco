@@ -233,16 +233,6 @@ canvas {
   font-size: var(--font-size-medium);
 }
 
-.orange{
-  background-color: #D96233 !important; 
-  color: black !important;
-}
-.white{
-  background-color: white !important;
-  color: black !important;
-}
-
-
 .header {
   max-width: 100%;
   text-align: center;
@@ -266,8 +256,8 @@ canvas {
 .btn{
   display: block;
   width: 180px;
-  padding: 12px;
-  font-size: 18px;
+  padding: 18px;
+  font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   font-family: 'Raleway';

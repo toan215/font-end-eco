@@ -2816,6 +2816,7 @@ main{
 	height: 100%;
 	width: 100%;
 	position: absolute;
+	font-family: 'Raleway';
 	left: 50%;
 	top: 50%;
 	overflow: hidden;
@@ -2898,9 +2899,11 @@ main{
 	z-index: 400;
 	opacity: 0;
 	text-decoration: none; 
+	text-transform: uppercase;
     color: black;
 	font-size:xxx-large;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
+	font-family: 'Raleway';
 }
 
 
@@ -2953,6 +2956,7 @@ animation: callback ease-in-out 3s 1s forwards;
     display: block; /* Default content display */
     height: 100%;
 }
+
 
 @media (max-height: 768px) {
     h4{
