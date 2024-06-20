@@ -40,7 +40,7 @@ class Scene
     () =>
     {
       this.w = window.innerWidth;
-      this.h = window.innerHeight*3/4;
+      this.h = window.innerHeight;
 
       for (var ii = 0; ii < this.views.length; ++ii) {
         var view = this.views[ii];
