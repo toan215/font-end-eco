@@ -2883,27 +2883,25 @@ main{
 	align-content: center;
 	padding-left: 14px;
 }
-.card {
-	width: 400px;  
-	height: 150px; 
-	background-color: transparent;
-	transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-	transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
-	will-change: transform;
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	z-index: 400;
-	opacity: 0;
-	text-decoration: none; 
-	text-transform: uppercase;
+.card {    
+	height: 150px;
+    background-color: transparent;
+    transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
+    will-change: transform;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    z-index: 400;
+    opacity: 0;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    text-decoration: none;
+    text-transform: uppercase;
     color: black;
-	font-size:xxx-large;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
-	font-family: 'Raleway';
+    font-size: xxx-large;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
 
