@@ -1,0 +1,240 @@
+
+:root {
+  --padding: 10vmin;
+  --color-background: black ;
+  --font-size-large: 64px;
+  --font-size-medium: 32px;
+  --font-size-normal: 16px;
+}
+
+
+html {
+  overflow-y: auto;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: "Libre Baskerville", serif;
+  background-color: var(--color-background);
+  font-weight: 400;
+  font-size: var(--font-size-normal);
+  overflow-x: hidden;
+}
+
+.content .section {
+  position: relative;
+  padding: var(--padding);
+  --pad2: calc(var(--padding) * 2);
+  width: calc(100vw - var(--pad2));
+  height: calc(100vh - var(--pad2));
+  margin: 0;
+  z-index: 2;
+}
+
+
+.content h1, .content h2 {
+  font-size: var(--font-size-large);
+  margin: 0vmin 0 2vmin 0;
+  font-weight: 700;
+  display: inline;
+}
+
+
+@keyframes planet {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: -1000px;
+  }
+}
+
+.frame1 .solar_systm .planet, body .frame1 input[type=radio][name=planet]::after, body .frame1 .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+ body .frame1 .solar_systm .planet.earth .trajectory.m {
+  border: 2px dashed white;
+  position: absolute;
+  border-radius: 3400px;
+  background: none;
+  z-index: -2;
+}
+
+body .frame1 .solar_systm .planet {
+  height: 1200px;
+  width: 1200px;
+  border-radius: 600px;
+  background: red;
+  transition: transform 2.8s 0.23s cubic-bezier(0.33, 0, 0, 1), opacity 2s 0.8s, box-shadow 0s 0s;
+  background-size: 1140px 910px ;
+  top: auto;
+  bottom: -600px;
+}
+
+body .frame1 .solar {
+  position: absolute;
+  transform: rotatex(-20deg);
+  perspective: 800px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+body .frame1 {
+  overflow: hidden;
+  background: black;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+body .frame1 .overlay {
+  border-bottom: 1020px solid black;
+  width: 1800px;
+  height: 620px;
+  top: auto;
+  transform: none;
+  top: -240px;
+  left: -303px;
+  opacity: 0.5;
+  border-radius: 100%;
+  z-index: -2;
+  box-shadow: 0px -190px 215px 110px black inset;
+}
+body .frame1 .solar_systm .planet.earth {
+  background: url(https://img00.deviantart.net/04ef/i/2009/114/3/e/new_earth_texture_map_by_lightondesigns.jpg);
+  box-shadow: 0 -590px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9;
+  transform-style: preserve-3d;
+  transform: translateZ(0px) translateY(0) rotatex(4deg) scaleX(0.96);
+  opacity: 2;
+  -webkit-animation: planet 60s 3.9s infinite linear;
+  animation: planet 60s 3.9s infinite linear;
+  /* clip-path: inset(-10% -10% 70.2% -10%); */
+  left: -10%;
+}
+
+.orange{
+  background-color: #D96233 !important; 
+  color: black !important;
+}
+.white{
+  background-color: white !important;
+  color: black !important;
+}
+
+
+.header {
+  max-width: 100%;
+  text-align: center;
+  color: white;
+}
+.header h1{
+  font-size: var(--font-size-large);
+  font-family: 'Oleo Script';
+}
+.header p{
+  font-size: var(--font-size-normal);
+  font-family: 'Oleo Script';
+}
+
+/* buttons */
+.btn-item{
+  gap: 40px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  display: block;
+  width: 180px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Raleway';
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3;
+  -webkit-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* media queries */
+@media only screen and (min-height: 800px) {
+  :root {
+    --font-size-large: 64px;
+    --font-size-medium: 32px;
+    --font-size-normal: 16px;
+  }
+  
+}
+@media only screen and (max-height: 500px) {
+    :root {
+      --font-size-large: 30px;
+      --font-size-medium: 20px;
+      --font-size-normal: 10px;
+    }
+    body .frame1 .solar_systm .planet {
+      height: 600px;
+      width: 600px;
+      border-radius: 300px;
+      background-size: 570px 460px;
+      bottom: -300px;
+    }
+    body .frame1 .overlay{
+      box-shadow: none;
+    }
+    .btn{
+      z-index: 1;
+      font-size: 10px;
+      width: 120px;
+      padding: 4px;
+    
+    }
+    body .frame1 .solar_systm .planet.earth {
+      box-shadow: 0 -490px 150px black inset, 0 0px 130px 40px #8cbaff inset, 0 0px 23px 4px #8cbaff inset, 0 -10px 130px #7894a9;
+    }
+}
+
+#rotate-message {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#rotate-message p {
+  margin: 0;
+}
+#content {
+  display: block; /* Default content display */
+  height: 100%;
+}
+
+#contents {
+  display: block; /* Default content display */
+  height: 100%;
+}

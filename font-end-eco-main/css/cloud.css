@@ -1,0 +1,551 @@
+.cloud {
+    width: 650px;
+    height: 350px;
+    position: absolute;
+    opacity: 0;
+    background: radial-gradient(closest-side, #fff 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 80%);
+    filter: url(#cloudRandom);
+  }
+  .cloud-layer {
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .cloud:nth-of-type(1) {
+    animation: 30s float linear infinite 0.333s;
+  }
+  .cloud:nth-of-type(2) {
+    animation: 30s float linear infinite 0.666s;
+  }
+  .cloud:nth-of-type(3) {
+    animation: 30s float linear infinite 0.999s;
+  }
+  .cloud:nth-of-type(4) {
+    animation: 30s float linear infinite 1.332s;
+  }
+  .cloud:nth-of-type(5) {
+    animation: 30s float linear infinite 1.665s;
+  }
+  .cloud:nth-of-type(6) {
+    animation: 30s float linear infinite 1.998s;
+  }
+  .cloud:nth-of-type(7) {
+    animation: 30s float linear infinite 2.331s;
+  }
+  .cloud:nth-of-type(8) {
+    animation: 30s float linear infinite 2.664s;
+  }
+  .cloud:nth-of-type(9) {
+    animation: 30s float linear infinite 2.997s;
+  }
+  .cloud:nth-of-type(10) {
+    animation: 30s float linear infinite 3.33s;
+  }
+  .cloud:nth-of-type(11) {
+    animation: 30s float linear infinite 3.663s;
+  }
+  .cloud:nth-of-type(12) {
+    animation: 30s float linear infinite 3.996s;
+  }
+  .cloud:nth-of-type(13) {
+    animation: 30s float linear infinite 4.329s;
+  }
+  .cloud:nth-of-type(14) {
+    animation: 30s float linear infinite 4.662s;
+  }
+  .cloud:nth-of-type(15) {
+    animation: 30s float linear infinite 4.995s;
+  }
+  .cloud:nth-of-type(16) {
+    animation: 30s float linear infinite 5.328s;
+  }
+  .cloud:nth-of-type(17) {
+    animation: 30s float linear infinite 5.661s;
+  }
+  .cloud:nth-of-type(18) {
+    animation: 30s float linear infinite 5.994s;
+  }
+  .cloud:nth-of-type(19) {
+    animation: 30s float linear infinite 6.327s;
+  }
+  .cloud:nth-of-type(20) {
+    animation: 30s float linear infinite 6.66s;
+  }
+  .cloud:nth-of-type(21) {
+    animation: 30s float linear infinite 6.993s;
+  }
+  .cloud:nth-of-type(22) {
+    animation: 30s float linear infinite 7.326s;
+  }
+  .cloud:nth-of-type(23) {
+    animation: 30s float linear infinite 7.659s;
+  }
+  .cloud:nth-of-type(24) {
+    animation: 30s float linear infinite 7.992s;
+  }
+  .cloud:nth-of-type(25) {
+    animation: 30s float linear infinite 8.325s;
+  }
+  .cloud:nth-of-type(26) {
+    animation: 30s float linear infinite 8.658s;
+  }
+  .cloud:nth-of-type(27) {
+    animation: 30s float linear infinite 8.991s;
+  }
+  .cloud:nth-of-type(28) {
+    animation: 30s float linear infinite 9.324s;
+  }
+  .cloud:nth-of-type(29) {
+    animation: 30s float linear infinite 9.657s;
+  }
+  .cloud:nth-of-type(30) {
+    animation: 30s float linear infinite 9.99s;
+  }
+  .cloud:nth-of-type(31) {
+    animation: 30s float linear infinite 10.323s;
+  }
+  .cloud:nth-of-type(32) {
+    animation: 30s float linear infinite 10.656s;
+  }
+  .cloud:nth-of-type(33) {
+    animation: 30s float linear infinite 10.989s;
+  }
+  .cloud:nth-of-type(34) {
+    animation: 30s float linear infinite 11.322s;
+  }
+  .cloud:nth-of-type(35) {
+    animation: 30s float linear infinite 11.655s;
+  }
+  .cloud:nth-of-type(36) {
+    animation: 30s float linear infinite 11.988s;
+  }
+  .cloud:nth-of-type(37) {
+    animation: 30s float linear infinite 12.321s;
+  }
+  .cloud:nth-of-type(38) {
+    animation: 30s float linear infinite 12.654s;
+  }
+  .cloud:nth-of-type(39) {
+    animation: 30s float linear infinite 12.987s;
+  }
+  .cloud:nth-of-type(40) {
+    animation: 30s float linear infinite 13.32s;
+  }
+  .cloud:nth-of-type(41) {
+    animation: 30s float linear infinite 13.653s;
+  }
+  .cloud:nth-of-type(42) {
+    animation: 30s float linear infinite 13.986s;
+  }
+  .cloud:nth-of-type(43) {
+    animation: 30s float linear infinite 14.319s;
+  }
+  .cloud:nth-of-type(44) {
+    animation: 30s float linear infinite 14.652s;
+  }
+  .cloud:nth-of-type(45) {
+    animation: 30s float linear infinite 14.985s;
+  }
+  .cloud:nth-of-type(46) {
+    animation: 30s float linear infinite 15.318s;
+  }
+  .cloud:nth-of-type(47) {
+    animation: 30s float linear infinite 15.651s;
+  }
+  .cloud:nth-of-type(48) {
+    animation: 30s float linear infinite 15.984s;
+  }
+  .cloud:nth-of-type(49) {
+    animation: 30s float linear infinite 16.317s;
+  }
+  .cloud:nth-of-type(50) {
+    animation: 30s float linear infinite 16.65s;
+  }
+  .cloud:nth-of-type(51) {
+    animation: 30s float linear infinite 16.983s;
+  }
+  .cloud:nth-of-type(52) {
+    animation: 30s float linear infinite 17.316s;
+  }
+  .cloud:nth-of-type(53) {
+    animation: 30s float linear infinite 17.649s;
+  }
+  .cloud:nth-of-type(54) {
+    animation: 30s float linear infinite 17.982s;
+  }
+  .cloud:nth-of-type(55) {
+    animation: 30s float linear infinite 18.315s;
+  }
+  .cloud:nth-of-type(56) {
+    animation: 30s float linear infinite 18.648s;
+  }
+  .cloud:nth-of-type(57) {
+    animation: 30s float linear infinite 18.981s;
+  }
+  .cloud:nth-of-type(58) {
+    animation: 30s float linear infinite 19.314s;
+  }
+  .cloud:nth-of-type(59) {
+    animation: 30s float linear infinite 19.647s;
+  }
+  .cloud:nth-of-type(60) {
+    animation: 30s float linear infinite 19.98s;
+  }
+  
+  @keyframes float {
+    0% {
+      opacity: 8;
+    }
+    100% {
+      right: -100%;
+    }
+  }
+
+  .cloud_2 {
+    width: 650px;
+    height: 350px;
+    position: absolute;
+    opacity: 0;
+    background: radial-gradient(closest-side, #fff 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 80%);
+    filter: url(#cloud2Random);
+  }
+  .cloud-layer_2 {
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .cloud_2:nth-of-type(1) {
+    animation: 30s float linear infinite 0.333s;
+  }
+  .cloud_2:nth-of-type(2) {
+    animation: 30s float linear infinite 0.666s;
+  }
+  .cloud_2:nth-of-type(3) {
+    animation: 30s float linear infinite 0.999s;
+  }
+  .cloud_2:nth-of-type(4) {
+    animation: 30s float linear infinite 1.332s;
+  }
+  .cloud_2:nth-of-type(5) {
+    animation: 30s float linear infinite 1.665s;
+  }
+  .cloud_2:nth-of-type(6) {
+    animation: 30s float linear infinite 1.998s;
+  }
+  .cloud_2:nth-of-type(7) {
+    animation: 30s float linear infinite 2.331s;
+  }
+  .cloud_2:nth-of-type(8) {
+    animation: 30s float linear infinite 2.664s;
+  }
+  .cloud_2:nth-of-type(9) {
+    animation: 30s float linear infinite 2.997s;
+  }
+  .cloud_2:nth-of-type(10) {
+    animation: 30s float linear infinite 3.33s;
+  }
+  .cloud_2:nth-of-type(11) {
+    animation: 30s float linear infinite 3.663s;
+  }
+  .cloud_2:nth-of-type(12) {
+    animation: 30s float linear infinite 3.996s;
+  }
+  .cloud_2:nth-of-type(13) {
+    animation: 30s float linear infinite 4.329s;
+  }
+  .cloud_2:nth-of-type(14) {
+    animation: 30s float linear infinite 4.662s;
+  }
+  .cloud_2:nth-of-type(15) {
+    animation: 30s float linear infinite 4.995s;
+  }
+  .cloud_2:nth-of-type(16) {
+    animation: 30s float linear infinite 5.328s;
+  }
+  .cloud_2:nth-of-type(17) {
+    animation: 30s float linear infinite 5.661s;
+  }
+  .cloud_2:nth-of-type(18) {
+    animation: 30s float linear infinite 5.994s;
+  }
+  .cloud_2:nth-of-type(19) {
+    animation: 30s float linear infinite 6.327s;
+  }
+  .cloud_2:nth-of-type(20) {
+    animation: 30s float linear infinite 6.66s;
+  }
+  .cloud_2:nth-of-type(21) {
+    animation: 30s float linear infinite 6.993s;
+  }
+  .cloud_2:nth-of-type(22) {
+    animation: 30s float linear infinite 7.326s;
+  }
+  .cloud_2:nth-of-type(23) {
+    animation: 30s float linear infinite 7.659s;
+  }
+  .cloud_2:nth-of-type(24) {
+    animation: 30s float linear infinite 7.992s;
+  }
+  .cloud_2:nth-of-type(25) {
+    animation: 30s float linear infinite 8.325s;
+  }
+  .cloud_2:nth-of-type(26) {
+    animation: 30s float linear infinite 8.658s;
+  }
+  .cloud_2:nth-of-type(27) {
+    animation: 30s float linear infinite 8.991s;
+  }
+  .cloud_2:nth-of-type(28) {
+    animation: 30s float linear infinite 9.324s;
+  }
+  .cloud_2:nth-of-type(29) {
+    animation: 30s float linear infinite 9.657s;
+  }
+  .cloud_2:nth-of-type(30) {
+    animation: 30s float linear infinite 9.99s;
+  }
+  .cloud_2:nth-of-type(31) {
+    animation: 30s float linear infinite 10.323s;
+  }
+  .cloud_2:nth-of-type(32) {
+    animation: 30s float linear infinite 10.656s;
+  }
+  .cloud_2:nth-of-type(33) {
+    animation: 30s float linear infinite 10.989s;
+  }
+  .cloud_2:nth-of-type(34) {
+    animation: 30s float linear infinite 11.322s;
+  }
+  .cloud_2:nth-of-type(35) {
+    animation: 30s float linear infinite 11.655s;
+  }
+  .cloud_2:nth-of-type(36) {
+    animation: 30s float linear infinite 11.988s;
+  }
+  .cloud_2:nth-of-type(37) {
+    animation: 30s float linear infinite 12.321s;
+  }
+  .cloud_2:nth-of-type(38) {
+    animation: 30s float linear infinite 12.654s;
+  }
+  .cloud_2:nth-of-type(39) {
+    animation: 30s float linear infinite 12.987s;
+  }
+  .cloud_2:nth-of-type(40) {
+    animation: 30s float linear infinite 13.32s;
+  }
+  .cloud_2:nth-of-type(41) {
+    animation: 30s float linear infinite 13.653s;
+  }
+  .cloud_2:nth-of-type(42) {
+    animation: 30s float linear infinite 13.986s;
+  }
+  .cloud_2:nth-of-type(43) {
+    animation: 30s float linear infinite 14.319s;
+  }
+  .cloud_2:nth-of-type(44) {
+    animation: 30s float linear infinite 14.652s;
+  }
+  .cloud_2:nth-of-type(45) {
+    animation: 30s float linear infinite 14.985s;
+  }
+  .cloud_2:nth-of-type(46) {
+    animation: 30s float linear infinite 15.318s;
+  }
+  .cloud_2:nth-of-type(47) {
+    animation: 30s float linear infinite 15.651s;
+  }
+  .cloud_2:nth-of-type(48) {
+    animation: 30s float linear infinite 15.984s;
+  }
+  .cloud_2:nth-of-type(49) {
+    animation: 30s float linear infinite 16.317s;
+  }
+  .cloud_2:nth-of-type(50) {
+    animation: 30s float linear infinite 16.65s;
+  }
+  
+  @keyframes float {
+    0% {
+      opacity: 8;
+    }
+    100% {
+      right: -100%;
+    }
+  }
+ 
+.cloud_3 {
+  width: 650px;
+  height: 350px;
+  position: absolute;
+  opacity: 0;
+  background: radial-gradient(closest-side, #fff 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 80%);
+  filter: url(#cloud3Random);
+}
+.cloud-layer_3 {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.cloud_3:nth-of-type(1) {
+  animation: 30s float linear infinite 0.333s;
+}
+.cloud_3:nth-of-type(2) {
+  animation: 30s float linear infinite 0.666s;
+}
+.cloud_3:nth-of-type(3) {
+  animation: 30s float linear infinite 0.999s;
+}
+.cloud_3:nth-of-type(4) {
+  animation: 30s float linear infinite 1.332s;
+}
+.cloud_3:nth-of-type(5) {
+  animation: 30s float linear infinite 1.665s;
+}
+.cloud_3:nth-of-type(6) {
+  animation: 30s float linear infinite 1.998s;
+}
+.cloud_3:nth-of-type(7) {
+  animation: 30s float linear infinite 2.331s;
+}
+.cloud_3:nth-of-type(8) {
+  animation: 30s float linear infinite 2.664s;
+}
+.cloud_3:nth-of-type(9) {
+  animation: 30s float linear infinite 2.997s;
+}
+.cloud_3:nth-of-type(10) {
+  animation: 30s float linear infinite 3.33s;
+}
+.cloud_3:nth-of-type(11) {
+  animation: 30s float linear infinite 3.663s;
+}
+.cloud_3:nth-of-type(12) {
+  animation: 30s float linear infinite 3.996s;
+}
+.cloud_3:nth-of-type(13) {
+  animation: 30s float linear infinite 4.329s;
+}
+.cloud_3:nth-of-type(14) {
+  animation: 30s float linear infinite 4.662s;
+}
+.cloud_3:nth-of-type(15) {
+  animation: 30s float linear infinite 4.995s;
+}
+.cloud_3:nth-of-type(16) {
+  animation: 30s float linear infinite 5.328s;
+}
+.cloud_3:nth-of-type(17) {
+  animation: 30s float linear infinite 5.661s;
+}
+.cloud_3:nth-of-type(18) {
+  animation: 30s float linear infinite 5.994s;
+}
+.cloud_3:nth-of-type(19) {
+  animation: 30s float linear infinite 6.327s;
+}
+.cloud_3:nth-of-type(20) {
+  animation: 30s float linear infinite 6.66s;
+}
+.cloud_3:nth-of-type(21) {
+  animation: 30s float linear infinite 6.993s;
+}
+.cloud_3:nth-of-type(22) {
+  animation: 30s float linear infinite 7.326s;
+}
+.cloud_3:nth-of-type(23) {
+  animation: 30s float linear infinite 7.659s;
+}
+.cloud_3:nth-of-type(24) {
+  animation: 30s float linear infinite 7.992s;
+}
+.cloud_3:nth-of-type(25) {
+  animation: 30s float linear infinite 8.325s;
+}
+.cloud_3:nth-of-type(26) {
+  animation: 30s float linear infinite 8.658s;
+}
+.cloud_3:nth-of-type(27) {
+  animation: 30s float linear infinite 8.991s;
+}
+.cloud_3:nth-of-type(28) {
+  animation: 30s float linear infinite 9.324s;
+}
+.cloud_3:nth-of-type(29) {
+  animation: 30s float linear infinite 9.657s;
+}
+.cloud_3:nth-of-type(30) {
+  animation: 30s float linear infinite 9.99s;
+}
+.cloud_3:nth-of-type(31) {
+  animation: 30s float linear infinite 10.323s;
+}
+.cloud_3:nth-of-type(32) {
+  animation: 30s float linear infinite 10.656s;
+}
+.cloud_3:nth-of-type(33) {
+  animation: 30s float linear infinite 10.989s;
+}
+.cloud_3:nth-of-type(34) {
+  animation: 30s float linear infinite 11.322s;
+}
+.cloud_3:nth-of-type(35) {
+  animation: 30s float linear infinite 11.655s;
+}
+.cloud_3:nth-of-type(36) {
+  animation: 30s float linear infinite 11.988s;
+}
+.cloud_3:nth-of-type(37) {
+  animation: 30s float linear infinite 12.321s;
+}
+.cloud_3:nth-of-type(38) {
+  animation: 30s float linear infinite 12.654s;
+}
+.cloud_3:nth-of-type(39) {
+  animation: 30s float linear infinite 12.987s;
+}
+.cloud_3:nth-of-type(40) {
+  animation: 30s float linear infinite 13.32s;
+}
+.cloud_3:nth-of-type(41) {
+  animation: 30s float linear infinite 13.653s;
+}
+.cloud_3:nth-of-type(42) {
+  animation: 30s float linear infinite 13.986s;
+}
+.cloud_3:nth-of-type(43) {
+  animation: 30s float linear infinite 14.319s;
+}
+.cloud_3:nth-of-type(44) {
+  animation: 30s float linear infinite 14.652s;
+}
+.cloud_3:nth-of-type(45) {
+  animation: 30s float linear infinite 14.985s;
+}
+.cloud_3:nth-of-type(46) {
+  animation: 30s float linear infinite 15.318s;
+}
+.cloud_3:nth-of-type(47) {
+  animation: 30s float linear infinite 15.651s;
+}
+.cloud_3:nth-of-type(48) {
+  animation: 30s float linear infinite 15.984s;
+}
+.cloud_3:nth-of-type(49) {
+  animation: 30s float linear infinite 16.317s;
+}
+.cloud_3:nth-of-type(50) {
+  animation: 30s float linear infinite 16.65s;
+}
+
+@keyframes float {
+  0% {
+    opacity: 8;
+  }
+  100% {
+    right: -100%;
+  }
+}

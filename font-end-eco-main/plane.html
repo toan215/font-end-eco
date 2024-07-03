@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Introducing - Eco Motion</title>
+  <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/e78c65adf1db19f37218b8a3b713bac98398ba0122612d73ae391e7b46ac87c4?apiKey=f8ad55ab573f48608f7cfe6da6119bf8&">
+  <link rel="stylesheet" href="./css/plane.css">
+  <link rel="stylesheet" href="./cloud.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="rotate-message">
+	<p>Please rotate your device to landscape mode.</p>
+</div>
+
+<div class="content" id = 'content'>
+	
+	<div class="loading">Loading</div>
+	<div class="trigger"></div>
+
+	
+
+		<div class="ground-container">
+			
+				<div class="parallax ground"></div>
+				
+				<div class="cloud-layer"></div>
+					<svg height='100' width='100'>
+						<filter id='cloudRandom'>
+						<feTurbulence type='fractalNoise' baseFrequency='0.012' numOctaves='4' seed='25' />
+						<feDisplacementMap in='SourceGraphic' scale='200' />
+						</filter>
+					  </svg>
+				
+
+				<div class="section right">
+					<h2>Toxic air causes 60,000 premature deaths annually in VN.</h2>
+				</div>
+
+				<div class="section">
+					<h2>Dirty air stunts lung growth and boosts asthma in children.</h2>
+				</div>
+				<div class="section right">
+					<h2> Indoor air contamination kills 3.8 million people each year.
+					</h2>
+				</div>
+				<div class="parallax clouds"></div>
+				
+		</div>
+		<div class ="cloud-cover1"></div>
+		<div class ="cloud-cover2"></div>
+	<div class="ground-container">
+		
+		<div class="parallax factory"></div>
+		
+		<div class="cloud-layer_2"></div>
+		<svg height='100' width='100'>
+			<filter id='cloud2Random'>
+				<feTurbulence type='fractalNoise' baseFrequency='0.012' numOctaves='4' seed='25' />
+				<feDisplacementMap in='SourceGraphic' scale='200' />
+			</filter>
+		</svg>
+
+		<div class="section right">
+			<h2>Contaminated air kills 7 million people annually worldwide.</h2>
+		</div>
+
+		<div class="section">
+			<h2>Urban haze from contaminants impairs driving and tourism.</h2>
+		</div>
+		<div class="section right">
+			<h2>Airborne pollutants like black carbon drive global warming.</h2>
+		</div>
+		<div class="cloud-layer_3">
+		</div>
+		<svg height='100' width='100'>
+			<filter id='cloud3Random'>
+				<feTurbulence type='fractalNoise' baseFrequency='0.012' numOctaves='4' seed='25' />
+				<feDisplacementMap in='SourceGraphic' scale='200' />
+			</filter>
+		</svg>
+		<div class="parallax clouds"></div>
+		
+	</div>
+	<div class ="cloud-cover3"></div>
+	<div class ="cloud-cover4"></div>
+	<div class="sunset">
+		<div class="section">
+		</div>
+		<div class="section end"><a  class="btn" href="factory.html">Let's go!</a></div>
+	</div>
+	
+
+</div>
+<!-- partial -->
+<script src='https://unpkg.com/three@0.117.1/build/three.min.js' defer></script>
+<script src='https://unpkg.com/three@0.117.1/examples/js/loaders/OBJLoader.js' defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="gsap-member\minified\ScrollTrigger.min.js" defer></script>
+<script src="./js/plane.js" defer></script>
+</body>
+</html>
