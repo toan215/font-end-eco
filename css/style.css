@@ -1,17 +1,5 @@
-@import url(https://mapsplatform.google.com/static/css/partials/industry-hero.css?fingerprint=74c9bba4b504b69647b849dc110ad770);
-@import url(https://mapsplatform.google.com/static/css/partials/spacer.css?fingerprint=0c68e564176ca57654d80a80a96020c7);
-@import url(https://mapsplatform.google.com/static/css/partials/banner.css?fingerprint=61dc84e0ad5b99d9da516dc814f24230);
-@import url(https://mapsplatform.google.com/static/css/partials/fullbleed-5050.css?fingerprint=7adc87199a5a9a94c622799eed7e4491);
-@import url(https://mapsplatform.google.com/static/css/partials/header.css?fingerprint=36013eec6961c676a806f2f9b2516139);
-@import url(https://mapsplatform.google.com/static/css/main.css?fingerprint=ceb233f57a78858aa338f22a1a4f532c);
-@import url(https://mapsplatform.google.com/static/css/partials/demo-carousel.css?fingerprint=f3083dc1c2a1c3207a2a0e705d154e3c);
-@import url(https://mapsplatform.google.com/static/css/partials/fullwidth-cards.css?fingerprint=8d24655031056bc5d9c4ef638322f61a);
-@import url(https://mapsplatform.google.com/static/css/partials/industry-video.css?fingerprint=38bba69d990539ae791a840317abc4e1);
-@import url(https://mapsplatform.google.com/static/css/partials/news-cards.css?fingerprint=6d16eb36ba5af30df3e968344518933b);
-@import url(https://mapsplatform.google.com/static/css/partials/resource-cards.css?fingerprint=15ebd65c4cc6885737189770306e5d11);
-@import url(https://mapsplatform.google.com/static/css/partials/testimonials-carousel.css?fingerprint=b61b188aa0c60ea92f2774e312925c6f);
-@import url(https://mapsplatform.google.com/static/css/partials/text-columns.css?fingerprint=9c77954548ff0481ed948cae1f7a4079);
-@import url(https://mapsplatform.google.com/static/css/partials/footer.css?fingerprint=70a442b99fbbf419d2744d5626f01a72);
+@import url(https://mapsplatform.google.com/assets/HmVx1aco.css);
+
 
 
 /* html, body {
@@ -159,65 +147,6 @@ a {
     grid-gap: 20px;
 }
 
-
-.button {
-    --background-color: #1a73e8;
-    --background-color-hover: #185abc;
-    --background-color-focus: #185abc;
-    --background-color-active: #185abc;
-    --background-color-disabled: #f8f9fa;
-    --box-shadow: none;
-    --box-shadow-hover: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 4px rgba(60, 64, 67, 0.25);
-    --box-shadow-focus: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 4px rgba(60, 64, 67, 0.25);
-    --box-shadow-focus-accessible: 0 0 0 4px #1a73e8;
-    --box-shadow-active: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 4px rgba(60, 64, 67, 0.25);
-    --box-shadow-disabled: none;
-    --color: #fff;
-    --color-hover: #fff;
-    --color-focus: #fff;
-    --color-active: #fff;
-    --color-disabled: #9aa0a6;
-    color: #202124;
-    font-family: "Google Sans", "Roboto", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: .25px;
-    line-height: 20px;
-    align-items: center;
-    -moz-appearance: none;
-    appearance: none;
-    -webkit-appearance: none;
-    background: var(--background-color);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: var(--box-shadow);
-    color: var(--color);
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    padding: 12px 24px;
-    text-decoration: none;
-    text-rendering: optimizeLegibility;
-    transition: background-color .2s, box-shadow .2s, color .2s;
-}
-.button--medium {
-    --background-color: #fff;
-    --background-color-hover: linear-gradient(0deg, rgba(26, 115, 232, 0.04), rgba(26, 115, 232, 0.04)), #fff;
-    --background-color-focus: linear-gradient(0deg, rgba(26, 115, 232, 0.12), rgba(26, 115, 232, 0.12)), #fff;
-    --background-color-active: linear-gradient(0deg, rgba(26, 115, 232, 0.1), rgba(26, 115, 232, 0.1)), #fff;
-    --background-color-disabled: #f8f9fa;
-    --box-shadow: 0 0 0 1px #dadce0;
-    --box-shadow-hover: 0 0 0 1px #1a73e8;
-    --box-shadow-focus: 0 0 0 1px #1a73e8;
-    --box-shadow-focus-accessible: 0 0 0 2px #1a73e8;
-    --box-shadow-active: 0 0 0 1px #1a73e8;
-    --box-shadow-disabled: 0 0 0 1px #dadce0;
-    --color: #1a73e8;
-    --color-hover: #174ea6;
-    --color-focus: #174ea6;
-    --color-active: #174ea6;
-    --color-disabled: #9aa0a6;
-}
 .button--tag {
     --color: #5f6368;
     font-family: "Google Sans", "Roboto", Arial, sans-serif;
