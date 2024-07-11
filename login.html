@@ -54,7 +54,8 @@
 			<input type="text" placeholder="User" class="input" />
 			<input type="email" placeholder="Email" class="input" />
 			<input type="password" placeholder="Password" class="input" />
-			<a href="weather.html" class="btn" style="text-decoration: none;"> Sign Up</a>
+			<button type="submit" class="btn" style="text-decoration: none;"> Sign up</button>
+		
 			
 		</form>
 	</div>
@@ -63,11 +64,12 @@
 	<div class="container__form container--signin">
 		<form action="#" class="form" id="form2">
 			<h2 class="form__title">Log In</h2>
-			<input type="email" placeholder="Email" class="input" />
-			<input type="password" placeholder="Password" class="input" />
+			<input type="email" name="email" placeholder="Email" class="input" required autocomplete="off"/>
+			<input type="password" name="password" placeholder="Password" class="input" required/>
 			<a href="#" class="link" style="margin: .5rem;">Forgot your password?</a>
 			<a href="weather.html" class="" style="font-size: 0.9rem; ">Continue with guest</a>
-			<a href="weather.html" class="btn" style="text-decoration: none;"> Log In</a>
+			<button type="submit" class="btn" style="text-decoration: none;">Log in</button>
+		
 		</form>
 	</div>
 
@@ -84,7 +86,7 @@
 	</div>
 </div>
 <!-- partial -->
-  <script  src="./js/login.js"></script>
+  <script  src="./server/src/login.js"></script>
 
 </body>
 </html>
