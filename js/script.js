@@ -12,4 +12,10 @@ var  waqiMapOverlay  =  new  google.maps.ImageMapType({
     name:  "Air  Quality",  
 });  
 
+function openNav() {
+    document.getElementById("mySidenav").classList.add("open");
+}
+function closeNav() {
+    document.getElementById("mySidenav").classList.remove("open");
+}
 map.overlayMapTypes.insertAt(0,  waqiMapOverlay);   

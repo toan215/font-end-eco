@@ -19,7 +19,7 @@
                 <div class="header__container">
                     <div class="header__lockup">
                         <!-- logo Eco Motion -->
-                        <button class="header__menu-button" tabindex="0" title="Open the navigation&nbsp;drawer" menu-open>
+                        <button class="header__menu-button" tabindex="0" title="Open the navigation&nbsp;drawer" menu-open onclick="openNav()">
                             <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/menu.svg" width="24" height="24" alt role="presentation">
                         </button>
                         <a class="link" href="#" aria-label="Google Maps Platform" data-category="globalNav" data-action="linkClick" data-label="navGMPHome" aria-label="ECO MOTION">
@@ -30,7 +30,7 @@
                            </span>
                         </a>
                     </div>
-                    <!-- menu bar -->
+                    <!--desktop menu bar -->
                     <div class="header__nav header__nav--desktop">
                         <div class="header__nav__item">
                             <a class="link  " href="#" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <div class="header__mobile__nav open">
+        <div class="header__mobile__nav " id="mySidenav">
             <div class="header__mobile__nav__mask" menu-close></div>
             <div class="header__nav">
                 <div class="header__lockup">
@@ -125,7 +125,7 @@
                             Motion
                         </span>
                     </a>
-                    <button class="header__nav__close-button" tabindex="0" title="Close the navigation drawer" menu-close>
+                    <button class="header__nav__close-button" tabindex="0" title="Close the navigation drawer" menu-close onclick="closeNav()">
                         <img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/menu-close.svg" width="16" height="16" title="Close icon" alt="Close icon">
                     </button>
                 </div>
@@ -615,7 +615,9 @@
                         </div>
                     </div>
                     <div class="footer__social__title"> Made by member's GDSC </div>
+                    <div class="footer__social__title">laksjdlkj</div>
                     <div class="footer__aside">I hope you have a wonderful day, Peace</div>
+
                 </div>
             </div>
         </footer>
@@ -623,5 +625,9 @@
 </body>
 <script src="https://mapsplatform.google.com/assets/8ICDp25J.min.js"></script>
 <script src="https://mapsplatform.google.com/assets/chunks/iFRUXW4k.min.js"></script>
+<script src="https://www.gstatic.com/glue/cookienotificationbar/cookienotificationbar.min.js" data-glue-cookie-notification-bar-category="2A" data-glue-cookie-notification-bar-site-id="mapsplatform.google.com" nonce="KvafLjSN96thaDu7OBREjw"></script>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-WH5QHH8" nonce="KvafLjSN96thaDu7OBREjw"></script>
+
 <script src="./js/script.js"></script>
+
 </html>
