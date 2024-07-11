@@ -20,7 +20,7 @@
 body {
 	align-items: center;
 	background-color: var(--white);
-	background: url("https://cdn.dribbble.com/userupload/14261871/file/original-2a7488bbb8ff161ce6677fad29cdf119.jpg?resize=1200x800");
+	
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
