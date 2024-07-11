@@ -1,23 +1,15 @@
+var  map  =  new  google.maps.Map(document.getElementById('map'),  {  
+    center:  new  google.maps.LatLng([15.35041,108.16041]),  
+    mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+    zoom:  11  
+});  
 
-// Check for orientation change
-function checkOrientation() {
-  if (window.innerHeight > window.innerWidth) {
-    // Portrait mode
-    document.getElementById('rotate-message').style.display = 'flex';
-    document.getElementById('contents').style.display = 'none';
-  } else {
-    // Landscape mode
-    document.getElementById('rotate-message').style.display = 'none';
-    document.getElementById('contents').style.display = 'block';
-  }
-}
+var  t  =  new  Date().getTime();  
+var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+    getTileUrl:  function  (coord,  zoom)  {  
+            return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=10eff006ec31b515737b4e48647a0d535de258a8";  
+    },  
+    name:  "Air  Quality",  
+});  
 
-// Initial check
-checkOrientation();
-
-// Add event listener for orientation change
-window.addEventListener('resize', checkOrientation);
-
-
-
-
+map.overlayMapTypes.insertAt(0,  waqiMapOverlay);   
