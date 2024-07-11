@@ -6,7 +6,54 @@
   <link rel="icon" href="https://cdn.builder.io/api/v1/image/assets/TEMP/e78c65adf1db19f37218b8a3b713bac98398ba0122612d73ae391e7b46ac87c4?apiKey=f8ad55ab573f48608f7cfe6da6119bf8&">
 </head>
 <body style='width:100%; height:100%;'>
+  <header class="header" style="z-index: 10000;">
+		<div class="header__top">
+			<div class="header__container">
+				<div class="header__lockup">
+					<!-- logo Eco Motion -->
+					<button class="header__menu-button" tabindex="0" title="Open the navigation&nbsp;drawer" menu-open onclick="openNav()">
+						<img loading="lazy" src="https://mapsplatform.google.com/static/images/icons/menu.svg" width="24" height="24" alt role="presentation">
+					</button>
+					<a class="link" href="index.html" aria-label="Google Maps Platform" data-category="globalNav" data-action="linkClick" data-label="navGMPHome" aria-label="ECO MOTION" style="margin: 0;">
+						<img loading="lazy" src="./img/EcoMotion.svg" width="80" height="80" title="Ecomotion" alt="Ecomotion">
+					   <span class="link__label">
+						<span>Eco</span>
+						Motion
+					   </span>
+					</a>
+				</div>
+				<!--desktop menu bar -->
+				<div class="header__nav header__nav--desktop">
+					<div class="header__nav__item">
+						<a class="link  " href="index.html" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+							<span class="link__label">Why Ecomotion</span>
+						</a>
+					</div>
+					<div class="header__nav__item">
+						<a class="link  " href="earth.html" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+							<span class="link__label">Introduction</span>
+						</a>
+					</div>
+          <div class="header__nav__item">
+						<a class="link  " href="https://www.chatbase.co/chatbot-iframe/VPLVs56FKmgmny8zTkiI3" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+							<span class="link__label">Chatbot</span>
+						</a>
+					</div>
+          <div class="header__nav__item">
+						<a class="link  " href="test.html" data-category="globalNav" data-action="linkClick" data-label="navWhyGoogle">
+							<span class="link__label">Map</span>
+						</a>
+					</div>
+				</div>
+				<div class="header__aside" style="padding-right: 6rem;">
+					<div class="header__aside__buttons header__aside__buttons--group2">
+						<div class="header__aside__button" style="font-style: italic;">"Join with us to protect the planet."</div>
+						<div class="header__aside__button">Hope you have a wonderful day, Peace</div>
+					</div>
+				</div>
+	</header>
 <div  id='map'  style='width:100%; height:100%;' ></div>  
+
 
 <link  rel="stylesheet"  href="./css/leaflet.css"  />  
 <script  src="./js/leaflet-src.js"></script>  
@@ -25,3 +72,4 @@
 </script>
 </body>
 </html>
+
